@@ -30,7 +30,7 @@ url = url || 'no encontrado'
 author = author || 'no encontrado'
     const vistas = formatViews(views)
     const canal = author.name ? author.name : 'Desconocido'
-    const infoMessage = `╭─〕「⚡  *𝒓𝒊𝒏 𝒊𝒕𝒐𝒔𝒉𝒊 ☃️*  ⭐」
+    const infoMessage = `╭─〕「⚡  *LUFFY BOT MD ☃️*  ⭐」
 ├̟̇˚₊🌴 𝑻𝒊𝒕𝒖𝒍𝒐: ${title || 'Desconocido'}
 ├̟̇˚₊🥥 𝑪𝒂𝒏𝒂𝒍: ${canal}
 ├̟̇˚₊⚡ 𝑽𝒊𝒔𝒕𝒂𝒔: ${vistas || 'Desconocido'}
