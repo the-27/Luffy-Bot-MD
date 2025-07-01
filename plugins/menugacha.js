@@ -2,32 +2,32 @@ let handler = async (m, { conn }) => {
   const texto = `
 🍭⊹ 𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐠𝐚𝐜𝐡𝐚 𝐩𝐚𝐫𝐚 𝐜𝐨𝐥𝐞𝐜𝐜𝐢𝐨𝐧𝐚𝐫 𝐭𝐮𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐣𝐞𝐬 𝐟𝐚𝐯𝐨𝐫𝐢𝐭𝐨𝐬 ⊹🍭
 
-ㅤۚ𑁯ׂᰍ  🌈 ᳴   ׅ  ׄʚ   ̶ *#rw • #rollwaifu*
+𑁯 *#rw* • *#rollwaifu*
 > ✦ Invoca a un personaje aleatorio.
 
-ㅤۚ𑁯ׂᰍ  🌈 ᳴   ׅ  ׄʚ   ̶ *#c • #claim*
+𑁯 *#c* • *#claim*
 > ✦ Reclama a tu personaje invocado.
 
-ㅤۚ𑁯ׂᰍ 🌈 ᳴ ׅ ׄʚ ̶ *#vote*
+𑁯 *#vote*
 > ✦ Sube el valor de tu personaje favorito. 
 
-ㅤۚ𑁯ׂᰍ 🌈 ᳴ ׅ ׄʚ ̶ *#addrw*
-> ✦ Has una petición para que añadan el personaje que quieras.
+𑁯 *#addrw*
+> ✦ Pide que añadan un personaje nuevo.
 
-ㅤۚ𑁯ׂᰍ 🌈 ᳴ ׅ ׄʚ ̶ *#harem*
-> ✦ Verifica cuántos personajes reclamaste, y cuáles tienes en tu harem.
+𑁯 *#harem*
+> ✦ Revisa tus personajes reclamados.
 
-ㅤۚ𑁯ׂᰍ 🌈 ᳴ ׅ ׄʚ ̶ *#wimage • #charimage*
-> ✦ Ve una foto aleatoria de algún personaje.
+𑁯 *#wimage* • *#charimage*
+> ✦ Muestra una imagen aleatoria.
 
-ㅤۚ𑁯ׂᰍ 🌈 ᳴ ׅ ׄʚ ̶ *#topwaifus*
-> ✦ Tabla de personajes que tienen alto valor.
+𑁯 *#topwaifus*
+> ✦ Lista de personajes más valiosos.
 
-ㅤۚ𑁯ׂᰍ 🌈 ᳴ ׅ ׄʚ ̶ *#winfo*
-> ✦ Ve información sobre algún personaje. 
+𑁯 *#winfo*
+> ✦ Información sobre un personaje.
 
-ㅤۚ𑁯ׂᰍ 🌈 ᳴ ׅ ׄʚ ̶ *#regalar • #givewaifu*
-> ✦ Regala un personaje de tu harem a otro usuario.
+𑁯 *#regalar* • *#givewaifu*
+> ✦ Regala un personaje a otro usuario.
 `.trim();
 
   await conn.sendMessage(m.chat, {
@@ -36,16 +36,14 @@ let handler = async (m, { conn }) => {
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: '🍭 Comandos gacha para reclamar tus personajes favoritos',
+        title: '💥 Comandos gacha para reclamar tus personajes favoritos',
         body: 'Reclama, regala y sube de nivel tus personajes preferidos',
         thumbnailUrl: 'https://files.catbox.moe/3pw7bx.jpg',
         mediaType: 1,
         renderLargerThumbnail: false,
         showAdAttribution: true,
         mediaUrl: 'https://whatsapp.com/channel/0029VakLbM76mYPPFL0IFI3P',
-        sourceUrl: 'https://whatsapp.com/channel/0029VakLbM76mYPPFL0IFI3P',
-        newsletterJid: '120363335626706839@newsletter',
-        newsletterName: '⏤͟͞ू⃪፝͜⁞⟡『 𝙍𝙪𝙗𝙮 𝙃𝙤𝙨𝙝𝙞𝙣𝙤 𝘽𝙤𝙩 』࿐⟡'
+        sourceUrl: 'https://whatsapp.com/channel/0029VakLbM76mYPPFL0IFI3P'
       }
     }
   }, { quoted: m });
