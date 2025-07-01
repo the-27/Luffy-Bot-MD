@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
   let imgurl = 'https://files.catbox.moe/bzwvsg.jpg';
-  const texto = `
+  const texto = `ʜᴏʟᴀ
     ╔═══════ • ° ❁⊕❁ ° • ═══════╗
         💰⃟⃢᭄͜═✩═[𝐌𝐄𝐍𝐔-𝐑𝐏𝐆]═✩═⃟⃢᭄͜🏆
     ╚═══════ • ° ❁⊕❁ ° • ═══════╝

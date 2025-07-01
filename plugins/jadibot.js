@@ -98,7 +98,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
 
       const totalUsers = users.length;
 
-      const responseMessage = `⚽ 𓂃ʀɪɴ-ɪᴛᴏsʜɪ 𝒋𝒂𝒅𝒊𝒃𝒐𝒕𝒔 𝒂𝒄𝒕𝒊𝒗𝒐𝒔𓂃🌹
+      const responseMessage = `⚽ 𓂃ʟᴜғғʏ 𝒋𝒂𝒅𝒊𝒃𝒐𝒕𝒔 𝒂𝒄𝒕𝒊𝒗𝒐𝒔𓂃🌹
 > *✦ sᥙᑲᑲ᥆𝗍s ᥲᥴ𝗍і᥎᥆s:* ${totalUsers || '0'}
 
 ${replyMessage.trim()}`;

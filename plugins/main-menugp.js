@@ -21,6 +21,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'grupo': 'MENU PARA ADMINS',
+'nable': ' ON / OFF ', 
 }
 let img = 'https://files.catbox.moe/xbc13q.jpg'
 
