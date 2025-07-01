@@ -1,8 +1,5 @@
-let handler = async (m, { conn, args }) => {
-    let userId = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
-    let user = global.db.data.users[userId]
-    let txt = `
-    [ꔊꔊꔊ[🍉] _*MENU - OWNER*_ [🍓]ꔊꔊꔊ]    
+let handler = async (m, { conn }) => {
+  const texto = `    [ꔊꔊꔊ[🍉] _*MENU - OWNER*_ [🍓]ꔊꔊꔊ]    
 Hola @${userId.split('@')[0]} aqui esta el menu owner
 
 > ᥴ᥆mᥲᥒძ᥆s ძᥱ m᥆ძᥱrᥲᥴіóᥒ ᥡ ᥴ᥆ᥒ𝗍r᥆ᥣ ᥲ᥎ᥲᥒzᥲძ᥆ ⍴ᥲrᥲ ᥆ᥕᥒᥱrs.
@@ -140,32 +137,26 @@ Hola @${userId.split('@')[0]} aqui esta el menu owner
 > ✦ αϲτυαℓιzα єℓ ϐοτ α ℓα νєяѕιóи мáѕ яєϲιєиτє ∂є gιτнυϐ.
 
 ·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙ 🌲 ˙·٠•●♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥●•٠·˙
-`.trim()
+`.trim();
 
-  await conn.sendMessage(m.chat, { 
-      text: txt,
-      contextInfo: {
-          mentionedJid: [m.sender, userId],
-          isForwarded: true,
-          forwardedNewsletterMessageInfo: {
-              newsletterJid: channelRD.id,
-              newsletterName: channelRD.name,
-              serverMessageId: -1,
-          },
-          forwardingScore: 999,
-          externalAdReply: {
-              title: botname,
-              body: textbot,
-              thumbnailUrl: logo,
-              sourceUrl: redes,
-              mediaType: 1,
-              showAdAttribution: true,
-              renderLargerThumbnail: true,
-          },
-      },
-  }, { quoted: m })
-
-}
+  await conn.sendMessage(m.chat, {
+    image: { url: 'https://files.catbox.moe/tfxlnk.png' },
+    caption: texto,
+    contextInfo: {
+      mentionedJid: [m.sender],
+      externalAdReply: {
+        title: '⭐ comandos para owners',
+        body: dev,
+        thumbnailUrl: 'https://files.catbox.moe/3pw7bx.jpg',
+        mediaType: 1,
+        renderLargerThumbnail: false,
+        showAdAttribution: true,
+        mediaUrl: 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U',
+        sourceUrl: 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U'
+      }
+    }
+  }, { quoted: m });
+};
 
 handler.help = ['dev']
 handler.tags = ['main']
