@@ -8,14 +8,17 @@ import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 const defaultMenu = {
-  before: `“🥥 ¡Hola! *%name*, a qui esta mi menu para Grupo"
+  before: `╭━━〔 *MENU ADMINIS* 〕━━⬣
+┃ 🧪 HOLA "%name" AQUI ESTA EL
+┃ 🧹 MENU PARA ADMINS.
+╰━━━━━━━━━━━━━━━━⬣
 
-*─═ڿڰۣڿ☻ڿڰۣڿ═─ 👾 ─═ڿڰۣڿ☻ڿڰۣڿ═─ *
+> ғᴜɴᴄɪᴏɴᴇs ᴘᴀʀᴀ ɢʀᴜᴘᴏs.
 %readmore
 `.trimStart(),
-  header: '╰⊱♥⊱╮ღ꧁ *_`%category`_* ꧂ღ╭⊱♥≺',
-  body: '┃『👾』 %cmd\n',
-  footer: '⚽♪┏(°.°)┛🎼 smiley.cool 🎼┏(°.°)┛♪🔗',
+  header: '--------[ *`%category`* ]----------',
+  body: '┃ %cmd\n',
+  footer: '┗━━━━━━━━━━━━━━━━\n',
   after: ``,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
