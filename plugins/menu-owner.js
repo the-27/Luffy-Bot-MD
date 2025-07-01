@@ -1,7 +1,6 @@
 let handler = async (m, { conn }) => {
   let name = await conn.getName(m.sender);
-  let dev = 'By CloverBot';
-
+  let imgurl = 'https://files.catbox.moe/bzwvsg.jpg';
   const texto = `    [ꔊꔊꔊ[🍉] _*MENU - OWNER*_ [🍓]ꔊꔊꔊ]    
 > Hola ${name} aqui esta el menu owner
 
@@ -143,14 +142,14 @@ let handler = async (m, { conn }) => {
 ...`.trim();
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://files.catbox.moe/tfxlnk.png' },
+    image: { url: imgurl },
     caption: texto,
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: '⭐ comandos de moderacion y control avansado para owners',
+        title: '⭐ comandos de moderacion y control avansado para owners 💥',
         body: dev,
-        thumbnailUrl: 'https://files.catbox.moe/3pw7bx.jpg',
+        thumbnailUrl: icono,
         mediaType: 1,
         renderLargerThumbnail: false,
         showAdAttribution: true,
