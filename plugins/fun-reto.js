@@ -47,7 +47,7 @@ let handler = async (m, { conn }) => {
     image: { url: img },
     caption: `${txt1}\n\n${reto}`,
     contextInfo: rcanal
-  }, { quoted: fkontak })
+  }, { quoted: m })
 }
 
 handler.help = ['reto']
