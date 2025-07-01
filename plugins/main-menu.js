@@ -1,4 +1,4 @@
-import { prepareWAMessageMedia } from '@whiskeysockets/baileys';
+/*import { prepareWAMessageMedia } from '@whiskeysockets/baileys';
 import fetch from 'node-fetch';
 
 const handler = async (m, { conn, usedPrefix }) => {
@@ -93,7 +93,101 @@ const handler = async (m, { conn, usedPrefix }) => {
   }
 };
 
-handler.help = ['menulist't];
+handler.help = ['menulist'];
+handler.tags = ['main'];
+handler.command = ['menulist'];
+export default handler;*/
+
+
+import fetch from 'node-fetch';
+
+const handler = async (m, { conn, usedPrefix }) => {
+  await m.react('💔');
+
+  try {
+    const titulo = '✨ Bienvenido al Menú del Bot';
+    const texto = `
+╭━━⬣ 𝙄𝙉𝙁𝙊 𝙐𝙎𝙐𝘼𝙍𝙄𝙊 ⬣━━
+┆▢ 👤 Usuario: ${conn.getName(m.sender)}
+┆▢ 🎖️ Rango: ${global.db.data.users[m.sender]?.role || 'Sin rango'}
+┆▢ ✨ Nivel: ${global.db.data.users[m.sender]?.level || 0}
+┆▢ 💠 Exp: ${global.db.data.users[m.sender]?.exp || 0}
+╰━━━━━━━━━━━━━━⬣
+
+> ╭━═┅═━──────────◈
+> ┋➛  ⚙️ 𝐎𝐏𝐂𝐈𝐎𝐍𝐄𝐒: ⚙️
+> ┋
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟⚙️ #menugp
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟🎨 #menulogos
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟💖 #dev
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟☃️ #menu18
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟💿 #menu2
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟🔍 #menusearch
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟📤 #menudl
+> ┋⁖ฺ۟̇࣪·֗٬̤⃟✨ #menurpg
+> ╰━═┅═━──────────◈
+`;
+
+    const imagen = 'https://i.imgur.com/JP52fdP.jpeg';
+    const imgBuffer = await fetch(imagen).then(res => res.buffer());
+
+    const buttons = [
+      { buttonId: `${usedPrefix}reg black.18`, buttonText: { displayText: '🛡️ VERIFICAR' }, type: 1 },
+      { buttonId: `${usedPrefix}allmenu`, buttonText: { displayText: '✅ MENU COMPLETO' }, type: 1 }
+    ];
+
+    const sections = [
+      {
+        title: "✦ MENÚS DISPONIBLES ✦",
+        rows: [
+          { title: "📥 𝙈𝙚𝙣𝙪́ 𝙙𝙚 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙨", description: "🎧 Descarga contenido de redes.", id: `${usedPrefix}menudl` },
+          { title: "🧿 𝑴𝑬𝑵𝑼́ 𝑬𝑪𝑶𝑵𝑶𝑴𝑰́𝑨 + 𝑹𝑷𝑮 ⚔️", description: "🎮 Juega y sube de nivel", id: `${usedPrefix}menurpg` },
+          { title: "🔍 𝐌𝐄𝐍𝐔́ 𝐃𝐄 𝐁𝐔́𝐒𝐐𝐔𝐄𝐃𝐀𝐒 🌐", description: "🌍 Busca info, audios, videos, etc.", id: `${usedPrefix}menusearch` },
+          { title: "👑 𝑴𝑬𝑵𝑼 𝑶𝑾𝑵𝑬𝑹 👑", description: "⚙️ Opciones del Owner", id: `${usedPrefix}dev` },
+          { title: "🎐 𝑴𝑬𝑵𝑼 𝑨𝑼𝑫𝑰𝑶𝑺🎚️", description: "🎵 Menú de audios", id: `${usedPrefix}menu2` },
+          { title: "👤 𝑴𝑬𝑵𝑼 / 𝑷𝑬𝑹𝑭𝑰𝑳", description: "🧍 Edita tu perfil", id: `${usedPrefix}perfildatesl` },
+          { title: "👥 𝑴𝑬𝑵𝑼 𝑮𝑹𝑼𝑷𝑶𝑺", description: "👨‍👩‍👧‍👦 Administración de grupos", id: `${usedPrefix}menugp` },
+          { title: "🔞 𝑴𝑬𝑵𝑼 +18", description: "🚫 Contenido NSFW", id: `${usedPrefix}menu18` },
+          { title: "❤️ 𝑴𝑬𝑵𝑼 𝑳𝑶𝑮𝑶𝑺", description: "🎭 Logos y estilos", id: `${usedPrefix}menulogos` }
+        ]
+      }
+    ];
+
+    await conn.sendMessage(m.chat, {
+      image: imgBuffer,
+      caption: titulo + '\n\n' + texto.trim(),
+      footer: '⏤͟͞ू⃪ 𝑹𝑰𝑵 𝑰𝑻𝑶𝑺𝑯𝑰 - 𝑩𝑶𝑻 • Powered by black',
+      buttons: [
+        ...buttons,
+        {
+          type: 4,
+          nativeFlowInfo: {
+            name: 'single_select',
+            paramsJson: JSON.stringify({
+              title: 'ධ⃟🌹 𝐌𝐄𝐍𝐔 𝐋𝐈𝐒𝐓 🐉',
+              sections
+            })
+          }
+        }
+      ],
+      headerType: 1,
+      viewOnce: true,
+      contextInfo: {
+        mentionedJid: [m.sender],
+        forwardingScore: 1000,
+        isForwarded: true
+      }
+    }, { quoted: m });
+
+    await m.react('✅');
+  } catch (e) {
+    console.error(e);
+    await m.react('❌');
+    await conn.reply(m.chat, '*❌ Error al mostrar el menú.*\n' + e.message, m);
+  }
+};
+
+handler.help = ['menulist'];
 handler.tags = ['main'];
 handler.command = ['menulist'];
 export default handler;
