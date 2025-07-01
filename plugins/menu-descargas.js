@@ -1,17 +1,11 @@
-let handler = async (m, { conn, args }) => {
-    let userId = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
-    let user = global.db.data.users[userId]
-    let txt = `
-        ・･ ⴕ⌛𝗕꯭𝐈፝𝚵꯭𝐍፝𝐕꯭𝜩፝𝐍꯭𝐈𝗗꯭፝𝚹꯭💊᳸ⴕ₊･・
-                 ᮢ ۪۪۪۪۪۪֘࣪࣪͜⏜͜𑂶ּ࣪࣪࣪࣪︵᷼ᜒ𝆬࣪࣪࣪࣪࣪ ۪۪۪۪۪۪۪   ᮬ⃘࣭࣭࣭᷼❀⃘࣭࣭࣭᷼  ᜒ𝆬 ͜ᮬ۪۪۪۪۪۪۪࣪࣪࣪࣪࣪⏜͜𑂶ּ࣪࣪࣪࣪︵۪۪۪۪۪۪࣪࣪͜  ᷑ ᮢ
-ֹི࣭࣭࣭࣭࣭࣮ׅ۪۪۪۪۪۪۪۪۪ٜ࣪࣪࣪࣪᷼✾ֹྀ࣭࣭࣭࣭࣭࣮ׅ۪۪۪۪۪۪۪۪۪ٜ࣪࣪࣪࣪᷼⏝𝐌𝐄𝐍𝐔 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒⏝ֹི࣭࣭࣭࣭࣭࣮ׅ۪۪۪۪۪۪۪۪۪ٜ࣪࣪࣪࣪᷼✾ֹྀ࣭࣭࣭࣭࣭࣮ׅ۪۪۪۪۪۪۪۪۪ٜ࣪࣪࣪࣪᷼
- ╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪━╈̷̸̳࣭࣪
+let handler = async (m, { conn }) => {
+  let imgurl = 'https://files.catbox.moe/bzwvsg.jpg';
+  const texto = `
+    ╔═══════ • ° ❁⊕❁ ° • ═══════╗
+        💰⃟⃢᭄͜═✩═[𝐌𝐄𝐍𝐔-𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒]═✩═⃟⃢᭄͜🏆
+    ╚═══════ • ° ❁⊕❁ ° • ═══════╝
 
-> *Hola @${userId.split('@')[0]} aqui esta el menu de descargas.*
-
-*ㅤ╭┅»•»💀ᬼ«•«┅┅┅𓍼𓄼𓄹᭣𓏲┅┅┅╮*
-ㅤㅤㅤ         il.🅛̶̟̟̟͋͜͡🅘̶̟̟͋͜͡🅢̶̟͋͜͡🅣̶̟̟͋͜͡🅐̟̟̟̇͜.li
-*ㅤ ╰┅┅┅𓍼𓄼𓄹᭣𓏲┅┅ »•»💀ᬼ«•«┅╯*
+> 📥⊹ 𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐝𝐞 𝐝𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐬 𝐩𝐚𝐫𝐚 𝐯𝐚𝐫𝐢𝐨𝐬 𝐚𝐫𝐜𝐡𝐢𝐯𝐨𝐬 📂⊹
 
 ━⃨⃛━╼─╍╍╍─╍▻◅╍─╍╍╼╼━⃨⃛╍╍
 ❥ 🎃 _.pinterestdl *<url>*_
@@ -55,32 +49,26 @@ let handler = async (m, { conn, args }) => {
 ❥ 🎃 _.apk2_
 ❥ 🎃 _.tiktoktrends_
 ━⃨⃛━╼─╍╍╍─╍▻◅╍─╍╍╼╼━⃨⃛╍╍
-`.trim()
+`.trim();
 
-  await conn.sendMessage(m.chat, { 
-      text: txt,
-      contextInfo: {
-          mentionedJid: [m.sender, userId],
-          isForwarded: true,
-          forwardedNewsletterMessageInfo: {
-              newsletterJid: channelRD.id,
-              newsletterName: channelRD.name,
-              serverMessageId: -1,
-          },
-          forwardingScore: 999,
-          externalAdReply: {
-              title: botname,
-              body: textbot,
-              thumbnailUrl: logo,
-              sourceUrl: redes,
-              mediaType: 1,
-              showAdAttribution: true,
-              renderLargerThumbnail: true,
-          },
-      },
-  }, { quoted: m })
-
-}
+  await conn.sendMessage(m.chat, {
+    image: { url: imgurl },
+    caption: texto,
+    contextInfo: {
+      mentionedJid: [m.sender],
+      externalAdReply: {
+        title: packname,
+        body: dev,
+        thumbnailUrl: icono,
+        mediaType: 1,
+        renderLargerThumbnail: false,
+        showAdAttribution: true,
+        mediaUrl: 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U',
+        sourceUrl: 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U'
+      }
+    }
+  }, { quoted: m });
+};
 
 handler.help = ['menudl']
 handler.tags = ['main']
