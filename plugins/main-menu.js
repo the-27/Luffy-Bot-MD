@@ -99,6 +99,7 @@ handler.command = ['menulist'];
 export default handler;*/
 
 
+import { prepareWAMessageMedia } from '@whiskeysockets/baileys';
 import fetch from 'node-fetch';
 
 const handler = async (m, { conn, usedPrefix }) => {
