@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
   const texto = `    [ꔊꔊꔊ[🍉] _*MENU - OWNER*_ [🍓]ꔊꔊꔊ]    
-Hola @${userId.split('@')[0]} aqui esta el menu owner
+> Hola ${name} aqui esta el menu owner
 
 > ᥴ᥆mᥲᥒძ᥆s ძᥱ m᥆ძᥱrᥲᥴіóᥒ ᥡ ᥴ᥆ᥒ𝗍r᥆ᥣ ᥲ᥎ᥲᥒzᥲძ᥆ ⍴ᥲrᥲ ᥆ᥕᥒᥱrs.
 
