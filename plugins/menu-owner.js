@@ -1,10 +1,7 @@
 let handler = async (m, { conn }) => {
-  let name = await conn.getName(m.sender);
   let imgurl = 'https://files.catbox.moe/bzwvsg.jpg';
   const texto = `    [ꔊꔊꔊ[🍉] _*MENU - OWNER*_ [🍓]ꔊꔊꔊ]    
-> Hola ${name} aqui esta el menu owner
-
-> ᥴ᥆mᥲᥒძ᥆s ძᥱ m᥆ძᥱrᥲᥴіóᥒ ᥡ ᥴ᥆ᥒ𝗍r᥆ᥣ ᥲ᥎ᥲᥒzᥲძ᥆ ⍴ᥲrᥲ ᥆ᥕᥒᥱrs.
+💥 𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐝𝐞 𝐦𝐨𝐝𝐞𝐫𝐚𝐜𝐢𝐨𝐧 𝐲 𝐜𝐨𝐧𝐭𝐫𝐨𝐥 𝐚𝐯𝐚𝐧𝐳𝐚𝐝𝐨 𝐩𝐚𝐫𝐚 𝐨𝐰𝐧𝐞𝐫𝐬. 🌼
 
 𖤓❴ *#α∂∂οωиєя • #∂єℓοωиєя*
 > ✦ αgяєgα ο єℓιмιиα υи иúмєяο ∂є ℓα ℓιѕτα ∂є οωиєяѕ.
@@ -147,7 +144,7 @@ let handler = async (m, { conn }) => {
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: '⭐ comandos de moderacion y control avansado para owners 💥',
+        title: packname,
         body: dev,
         thumbnailUrl: icono,
         mediaType: 1,
