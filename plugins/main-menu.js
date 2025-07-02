@@ -12,10 +12,11 @@ let handler = async (m, { conn, args }) => {
     let totalreg = Object.keys(global.db.data.users).length;  
     let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length;  
       
-    let med = 'ۚ𑁯ׂ✦ ᳴ʚ ̶ ';  
+    let med = 'ۚ𑁯ׂ✦ ᳴ʚ ̶ ';
+    let canal = 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U';
     let imgUrl = 'https://files.catbox.moe/bzwvsg.jpg';  
     
-    let txt = `!𝐇𝐎𝐋𝐀¡ @${userId.split('@')[0]}, 𝒎𝒊 𝒏𝒐𝒎𝒃𝒓𝒆 𝒆𝒔 ${bot}
+    let txt = `𝐇𝐎𝐋𝐀 @${userId.split('@')[0]}, 𝒎𝒊 𝒏𝒐𝒎𝒃𝒓𝒆 𝒆𝒔 ${bot}
     
     *ᴀǫᴜɪ ᴛɪᴇɴᴇs ʟᴀ ʟɪsᴛᴀ ᴅᴇ ᴄᴏᴍᴀɴᴅᴏs (≧◡≦)*
 ╭━━━━〔 💥 𝗜𝗡𝗙𝗢 ⭐ 〕━━━━━⬣
@@ -25,7 +26,7 @@ let handler = async (m, { conn, args }) => {
 ┆ ☆ 🍟 *USUARIOS REGISTRADOS:* ${totalreg}
 ┆ ☆ 🪀 *COMANDOS CARGADOS:* ${totalCommands}
 ┆ ☆ ⏱ *TIEMPO ACTIVO:* ${uptime}
-┆ ☆ 🧃 *CANAL:* https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U
+┆ ☆ 🧃 *CANAL:* ${canal}
 ╰━━━━━━━━━━━━━━━━━⬣
     
 ╭━━〔 𝗜𝗡𝗙𝗢 𝗗𝗘𝗟 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 〕━━⬣
