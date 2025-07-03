@@ -1,78 +1,101 @@
+import fetch from 'node-fetch'
+
 let handler = async (m, { conn, text }) => {
-      try {
-         if (!text) {
-            return conn.reply(m.chat, `🌷 Ejemplo de uso: inspect https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U`, m);
-         }
+  try {
+    if (!text) {
+      return conn.reply(m.chat, `🌷 Ejemplo de uso: inspect https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U`, m, rcanal);
+    }
 
-         if (text.includes('https://whatsapp.com/channel/')) {
-            let i = await getInfo(conn, text);
+    if (!text.includes('https://whatsapp.com/channel/')) {
+      return conn.reply(m.chat, `☄️ Ingresa un link válido.`, m, rcanal);
+    }
 
-conn.relayMessage(m.chat, {
-extendedTextMessage:{
-                text: i.inf, 
-                contextInfo: {
-mentionedJid: conn.parseMention(i.inf),
-                     externalAdReply: {
-                        title: wm,
-                        mediaType: 1,
-                        previewType: 0,
-                        renderLargerThumbnail: true,
-                        thumbnail: await (await fetch(logo)).buffer(),
-                        sourceUrl: ''
-                    }
-                }
-}}, { quoted: m })
-            await await await m.reply(i.id);
-            m.react("☑️");
-         } else {
-            return conn.reply(m.chat, `☄️ Ingresa un link válido.`, m, rcanal);
-         }
-      } catch (error) {
-         console.error(error);
-         await conn.reply(m.chat, `Error al obtener la información del canal: ${error.message}`, m);
+    let i = await getInfo(conn, text);
+    if (!i) throw new Error('No se obtuvo información del canal.');
+
+    await conn.relayMessage(m.chat, {
+      extendedTextMessage: {
+        text: i.inf,
+        contextInfo: {
+          mentionedJid: conn.parseMention(i.inf),
+          externalAdReply: {
+            title: 'Canal inspeccionado',
+            mediaType: 1,
+            previewType: 0,
+            renderLargerThumbnail: true,
+            thumbnail: await (await fetch(logo)).buffer(),
+            sourceUrl: `https://whatsapp.com/channel/${i.id}`
+          }
+        }
       }
-   }
-handler.command = ["inspector", "inspect", "id"]
-handler.help = ["inspect"]
-handler.tags = ["tools"]
-export default handler
+    }, { quoted: m });
+
+    await m.reply(i.id);
+    await m.react("☑️");
+
+  } catch (error) {
+    console.error(error);
+    await conn.reply(m.chat, `❌ Error al obtener la información del canal: ${error.message}`, m);
+  }
+}
+
+handler.command = ["inspector", "inspect", "id"];
+handler.help = ["inspect"];
+handler.tags = ["tools"];
+export default handler;
 
 async function getInfo(conn, url) {
-    const match = url.match(/https:\/\/whatsapp\.com\/channel\/([0-9A-Za-z]+)/i);
-    if (!match) throw new Error("El enlace proporcionado no es válido o no pertenece a un canal de WhatsApp.");
-    
-    const channelId = match[1];
+  const match = url.match(/https:\/\/whatsapp\.com\/channel\/([0-9A-Za-z]+)/i);
+  if (!match) throw new Error("❗ Enlace de canal no válido.");
 
-    try {
-        const info = await conn.newsletterMetadata("invite", channelId);
-        const fecha = new Date(info.creation_time * 1000);
-        const fechaFormato = fecha.toLocaleDateString("es-ES", { year: 'numeric', month: 'long', day: 'numeric' });
+  const channelId = match[1];
+  const info = await conn.query({
+    tag: 'iq',
+    attrs: {
+      type: 'get',
+      xmlns: 'w:newsletter',
+      to: '@newsletter.whatsapp.net'
+    },
+    content: [{
+      tag: 'newsletter',
+      attrs: {
+        id: channelId
+      }
+    }]
+  });
 
-        let txt = `
-            ◜ *Channel - Info* ◞
+  if (!info || !info.content) {
+    throw new Error('No se pudo obtener METADATA del canal.');
+  }
 
-≡ 🌴 *Nombre:* ${info.name}
-≡ 🌿 *ID:* ${info.id}
-≡ 🌾 *Estado:* ${info.state}
+  const data = info.content.find(v => v.tag === 'newsletter');
+
+  if (!data) {
+    throw new Error('No se encontró información del canal.');
+  }
+
+  const fecha = new Date(Number(data.attrs.creation || 0) * 1000);
+  const fechaFormato = fecha.toLocaleDateString("es-ES", { year: 'numeric', month: 'long', day: 'numeric' });
+
+  let txt = `
+◜ *Channel - Info* ◞
+
+≡ 🌴 *Nombre:* ${data.attrs.name || 'Desconocido'}
+≡ 🌿 *ID:* ${data.attrs.id || channelId}
+≡ 🌾 *Estado:* ${data.attrs.state || 'Desconocido'}
 ≡ 📅 *Creado:* ${fechaFormato}
 
-≡ 🗃️ *Enlace:*
-- https://whatsapp.com/channel/${info.invite}
+≡ 🗃️ *Enlace:* https://whatsapp.com/channel/${data.attrs.invite || channelId}
 
-≡ 🍄 *Seguidores:* ${info.subscribers}
-≡ 🎍 *Verificación:* ${info.verified ? "✅ Sí" : "❌ No"}
+≡ 🍄 *Seguidores:* ${data.attrs.subscribers || 0}
+≡ 🎍 *Verificación:* ${data.attrs.verified === 'true' ? "✅ Sí" : "❌ No"}
 
 ≡ 🌷 *Descripción:* 
-${info.description || "Sin descripción"}
+${data.attrs.description || "Sin descripción"}
+`.trim();
 
-${footer}
-        `.trim();
-
-        return {
-            id: info.id,
-            inf: txt
-        };
-    } catch (error) {
-        throw new Error(`No se pudo obtener la información del canal: ${error.message}`);
-    }
+  return {
+    id: channelId,
+    inf: txt
+  };
 }
