@@ -61,7 +61,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 🧭 𝐏ᥲís : ${pais}
 📜 𝐅ᥱᥴһᥲ : ${fecha}
 🕊️ 𝐇᥆rᥲ : ${hora}    
-🎀 𝐆rᥙ⍴᥆ : ${groupMetadata.subject}
+👻 𝐆rᥙ⍴᥆ : ${groupMetadata.subject}
 
 *${global.welcom1}*
 
