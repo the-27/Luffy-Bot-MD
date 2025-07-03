@@ -33,11 +33,11 @@ global.namechannel = '=͟͟͞𝐋𝐔𝐅𝐅𝐘 𝐁𝐎𝐓 𝐌𝐃 • 𝒖
 global.namechannel2 = '=͟͟͞𝐋𝐔𝐅𝐅𝐘 𝐁𝐎𝐓 𝐌𝐃 • 𝒂𝒗𝒊𝒔𝒐𝒔 ⌺'
 global.namegrupo = '=͟͟͞𝐋𝐔𝐅𝐅𝐘 𝐁𝐎𝐓 𝐌𝐃 • 𝒐𝒇𝒊𝒄𝒊𝒂𝒍 ⌺'
 global.namecomu = '=͟͟͞𝐋𝐔𝐅𝐅𝐘 𝐁𝐎𝐓 𝐌𝐃 • 𝑪𝒐𝒎𝒖𝒏𝒊𝒕𝒚 ˟꘏꙳'
-global.listo = '*🌴 ＡＱＵＩ - ＴＩＥＮＥＳ*'
+global.listo = '*🌴 ＡＱＵＩ - ＴＩＥＮＥＳ ＭＥＮ*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/dr3r2f.jpg')
 
 global.canalIdM = ["120363401008003732@newsletter", "120363401008003732@newsletter"]
-global.canalNombreM = ["  ꙰⃟☃️ 𝕃𝕌𝔽𝔽𝕐 𝔹𝕆𝕋 𝕄𝔻 𝕏 𝔹𝕃𝔸ℂ𝕂 ★꙰⃟⸙", "🐉꙰⃟ 𖠺𝐋𝐔𝐅𝐅𝐘 𝐁𝐎𝐓 𝐌𝐃𖠺🌴⃟ᰳᰬᰶ"]
+global.canalNombreM = ["  ꙰⃟☃️ ʟᴜғғʏ ʙᴏᴛ ᴍᴅ x ʙʟᴀᴄᴋ ★꙰⃟⸙", "🐉꙰⃟ 𖠺 𝐋𝐔𝐅𝐅𝐘 𝐁𝐎𝐓 𝐌𝐃 𖠺🌴⃟ᰳᰬᰶ"]
 global.channelRD = await getRandomChannel()
 
 global.d = new Date(new Date + 3600000)
@@ -60,10 +60,10 @@ global.emoji4 = '(๑>ᴗ๑'
 global.emoji5 = '(◕‿◕✦'
 global.emojis = [emoji, emoji2, emoji3, emoji4, emoji5].getRandom()
 
-global.wait = '=͟͟͞⚡ 𝗘𝘀𝗽𝗲𝗿𝗲 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗼...';
-global.waitt = '=͟͟͞⚡ 𝗘𝘀𝗽𝗲𝗿𝗲 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗼...';
-global.waittt = '=͟͟͞⚡ 𝗘𝘀𝗽𝗲𝗿𝗲 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗼...';
-global.waitttt = '=͟͟͞⚡ 𝗘𝘀𝗽𝗲𝗿𝗲 𝗨𝗻 𝗠𝗼𝗺𝗲𝗻𝘁𝗼, 𝗦𝗼𝘆 𝗟𝗲𝗻𝘁𝗼...';
+global.wait = '⚘𖠵⃕ＣＡＲＧＡＮＤＯ...ꪾ❍̵̤̂\n=͟͟͞⚡ 𝐴𝑔𝑢𝑎𝑟𝑑𝑒 𝑢𝑛 𝑚𝑜𝑚𝑒𝑛𝑡𝑜...';
+global.waitt = global.wait
+global.waittt = global.wait
+global.waitttt = global.wait
 
 var canal = 'https://whatsapp.com/channel/0029Vb6BDQc0lwgsDN1GJ31i'  
 var comunidad = ''
@@ -89,12 +89,8 @@ global.taguser = '@' + m.sender.split("@s.whatsapp.net")
 var more = String.fromCharCode(8206)
 global.readMore = more.repeat(850)
 
-global.packsticker = `┊ ⚡ Usuario: clave ${nombre}
-┊ 🥥 Bot: ${bot}
-┊ 👻 Fecha: ${fecha}
-┊ 🕰️ Hora: ${tiempo}
-╰┈➤`;
-global.packsticker2 = `\n${dev}`
+global.packsticker = `🧙‍♂️ Mago: ${nombre}\n${bot}`;
+global.packsticker2 = `\n 𑁯ᰰᘘ᷒ᰰ ༝⃟ꪆ 𝙂𝘼𝙔 𝙎𝙄 𝙇𝙊 𝙍𝙊𝘽𝘼𝙎 ༝⃟ꪆ ᘘ᷒ᰰ𑁯`
   
 global.fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `6285600793871-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${nombre}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${nombre},;;;\nFN:${nombre},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': null, thumbnail: null,sendEphemeral: true}}}
 

@@ -3,24 +3,24 @@ let handler = async (m, { conn, usedPrefix }) => {
   let txt = `╭ - - - - - - -✎ 🌹   ❜ ⊹
 *︵₊˚꒰Ꮺ мαиυαℓ ραяα є∂ιταя τυ ρєяƒιℓ*
 *꒰ ୨⚽୧─・┈・୨⚡୧・┈・─୨🥥୧ ꒱*
-₊˚୨🍧 *${usedPrefix}ѕєτϐιяτн* ✦ є∂ιτα τυ ƒєϲнα ∂є ϲυмρℓєαñοѕ 🎂.
-₊˚୨💥 *${usedPrefix}∂єℓϐιяτн* ✦ єℓιмιиα τυ ƒєϲнα ∂є ϲυмρℓєαñοѕ 🎂.
-₊˚୨⚔️ *${usedPrefix}ѕєτ∂єѕϲ* ♡ є∂ιτα ℓα ∂єѕϲяιρϲιóи ∂є τυ ρєяƒιℓ.
-₊˚୨🍁 *${usedPrefix}∂єℓ∂єѕϲ* ♡ єℓιмιиα ℓα ∂єѕϲяιρϲιóи ∂є τυ ρєяƒιℓ.
-₊˚୨🌲 *${usedPrefix}ѕєτgєияє* ✐ є∂ιτα τυ géиєяο єи τυ ρєяƒιℓ.
-₊˚୨🏜️ *${usedPrefix}∂єℓgєияє* ✐ єℓιмιиα τυ géиєяο єи τυ ρєяƒιℓ.
-₊˚୨❄️ *${usedPrefix}мαяяγ* ᰔᩚ ϲáѕατє ϲοи υиα ρєяѕοиα.
-₊˚୨🦠 *${usedPrefix}∂ινοяϲє* ঔ ∂ινóяϲιατє ∂є υиα ρєяѕοиα.
+₊˚୨🍧 *${usedPrefix}setbirth* ✦ є∂ιτα τυ ƒєϲнα ∂є ϲυмρℓєαñοѕ 🎂.
+₊˚୨💥 *${usedPrefix}delbirth* ✦ єℓιмιиα τυ ƒєϲнα ∂є ϲυмρℓєαñοѕ 🎂.
+₊˚୨⚔️ *${usedPrefix}setdesc* ♡ є∂ιτα ℓα ∂єѕϲяιρϲιóи ∂є τυ ρєяƒιℓ.
+₊˚୨🍁 *${usedPrefix}deldesc* ♡ єℓιмιиα ℓα ∂єѕϲяιρϲιóи ∂є τυ ρєяƒιℓ.
+₊˚୨🌲 *${usedPrefix}ѕ_setgenre* ✐ є∂ιτα τυ géиєяο єи τυ ρєяƒιℓ.
+₊˚୨🏜️ *${usedPrefix}delgenre* ✐ єℓιмιиα τυ géиєяο єи τυ ρєяƒιℓ.
+₊˚୨❄️ *${usedPrefix}marry* ᰔᩚ ϲáѕατє ϲοи υиα ρєяѕοиα.
+₊˚୨🦠 *${usedPrefix}divorse* ঔ ∂ινóяϲιατє ∂є υиα ρєяѕοиα.
 ╰───────────────⋆`;
 
   const buttons = [
     { 
       buttonId: `${usedPrefix}profile`,
-      buttonText: { displayText: "🏔️ ⍴ᥱr𝖿іᥣ" }, type: 1
+      buttonText: { displayText: "🧙‍♂️ ⍴ᥱr𝖿іᥣ" }, type: 1
     },
     { 
       buttonId: `${usedPrefix}p`,
-      buttonText: { displayText: "🏓 ⍴іᥒg" }, type: 1
+      buttonText: { displayText: "🎄 ⍴іᥒg" }, type: 1
     },
   ];
   

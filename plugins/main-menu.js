@@ -12,7 +12,7 @@ let handler = async (m, { conn, args }) => {
     let totalreg = Object.keys(global.db.data.users).length;  
     let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length;  
       
-    let med = 'ۚ𑁯ׂ✦ ᳴ʚ ̶ ';
+    let luffyST = 'ۚ𑁯ׂ✦ ᳴ʚ ̶ ';
     let canal = 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U';
     let imgUrl = 'https://files.catbox.moe/bzwvsg.jpg';  
     
@@ -38,573 +38,569 @@ let handler = async (m, { conn, args }) => {
 ╰━━━━━━━━━━━━━━━━━⬣
 ‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
   ╔═════ • ° ❁⊕❁ ° • ═════╗
-  ┃┎┈┈┈┈┈┈┈୨💥୧┈┈┈┈┈┈┈┒┃
+  ┃┎┈┈┈┈┈┈୨💥୧┈┈┈┈┈┈┒ ┃
   ┃┃ 🍇 *_BOT_* ⌬⃝𓆩⚘ ${(conn.user.jid == global.conn.user.jid ? '𝗢𝗙𝗜𝗖𝗜𝗔𝗟' : '𝗦𝗨𝗕 𝗕𝗢𝗧')}
-  ┃┖┈┈┈┈┈┈┈୨☄️୧┈┈┈┈┈┈┈┚┃
+  ┃┖┈┈┈┈┈┈୨☄️୧┈┈┈┈┈┈┚ ┃
   ╚═════ • ° ❁⊕❁ ° • ═════╝
-
 
 
 *➩ L I S T A  -  D E  -  C O M A N D O S*
 ─҉͙͙͙͙͙͙͙͙͙͙͛-♡--^┄┅┉┅┄⧫◊┄┄┉┅┄^--♡-──҉͙͙͙͙͙͙͙͙͙͙͛
 > ᥴrᥱᥲ ᥙᥒ *sᥙᑲ-ᑲ᥆𝗍* ᥴ᥆ᥒ 𝗍ᥙ ᥒúmᥱr᥆ ᥙ𝗍іᥣіzᥲᥒძ᥆ *#qr* o *#code*
 ׅׄ︶ٜٜٜٜׄ߭ׄ߭ׄ߭ׄ߭⏝ׅׄ︶ٜٜׄ߭ׄ߭⏝ׄ.ׅ︶ٜٜׄ߭ׄ߭⏝ׅׄ︶ٜٜׄ߭ׄ߭⏝ٜׄׄ߭⏝ׅׄ.︶ٜٜٜٜׄ߭ׄ߭ׄ߭ׄ߭
-
-
-
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[𝐈𝐍𝐅𝐎-𝐁𝐎𝐓]═✩═ 💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .menu
-┆ ${med} .uptime
-┆ ${med} .script
-┆ ${med} .staff
-┆ ${med} .creador
-┆ ${med} .grupos
-┆ ${med} .estado
-┆ ${med} .infobot
-┆ ${med} .sug
-┆ ${med} .ping
-┆ ${med} .reportar *<text>*
-┆ ${med} .reglas
-┆ ${med} .speed
-┆ ${med} .sistema
-┆ ${med} .usuarios
-┆ ${med} .ds
-┆ ${med} .funciones
-┆ ${med} .editautoresponder
+┆ ${luffyST} .menu
+┆ ${luffyST} .uptime
+┆ ${luffyST} .script
+┆ ${luffyST} .staff
+┆ ${luffyST} .creador
+┆ ${luffyST} .grupos
+┆ ${luffyST} .estado
+┆ ${luffyST} .infobot
+┆ ${luffyST} .sug
+┆ ${luffyST} .ping
+┆ ${luffyST} .reportar *<text>*
+┆ ${luffyST} .reglas
+┆ ${luffyST} .speed
+┆ ${luffyST} .sistema
+┆ ${luffyST} .usuarios
+┆ ${luffyST} .ds
+┆ ${luffyST} .funciones
+┆ ${luffyST} .editautoresponder
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[𝐌𝐄𝐍𝐔𝐒-𝐁𝐎𝐓]═✩═ 💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .dev - *Menu owner*
-┆ ${med} .menuse - *Menu search*
-┆ ${med} .menudl - *Menu descargas*
-┆ ${med} .menulogos - *logos*
-┆ ${med} .menu18 - *Menu hot*
-┆ ${med} .menugp - *Menu grupo*
-┆ ${med} .menu2 - *Menu audios*
-┆ ${med} .menurpg - *Menu economia*
+┆ ${luffyST} .dev - *Menu owner*
+┆ ${luffyST} .menuse - *Menu search*
+┆ ${luffyST} .menudl - *Menu descargas*
+┆ ${luffyST} .menulogos - *logos*
+┆ ${luffyST} .menu18 - *Menu hot*
+┆ ${luffyST} .menugp - *Menu grupo*
+┆ ${luffyST} .menu2 - *Menu audios*
+┆ ${luffyST} .menurpg - *Menu economia*
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[𝐁𝐔𝐒𝐂𝐀𝐃𝐎𝐑𝐄𝐒]═✩═ 💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .animeinfo
-┆ ${med} .animesearch
-┆ ${med} .cuevana
-┆ ${med} .githubsearch
-┆ ${med} .searchhentai
-┆ ${med} .google *<búsqueda>*
-┆ ${med} .imagen *<query>*
-┆ ${med} .infoanime
-┆ ${med} .githubstalk *<query>*
-┆ ${med} .soundcloudsearch *<txt>*
-┆ ${med} .pinterest
-┆ ${med} .pornhubsearch
-┆ ${med} .spotifysearch *<texto>*
-┆ ${med} .ytsearch2 *<text>*
-┆ ${med} .npmjs
-┆ ${med} .gnula
-┆ ${med} .apksearch
-┆ ${med} .wikis
-┆ ${med} .tiktoksearch *<txt>*
-┆ ${med} .tweetposts
-┆ ${med} .xnxxs
-┆ ${med} .xvsearch
-┆ ${med} .yts
-┆ ${med} .fdroidsearch <término>
-┆ ${med} .happymodsearch *<búsqueda>*
-┆ ${med} .cinecalidadsearch *<búsqueda>*
-┆ ${med} .yahoosearch *<búsqueda>*
-┆ ${med} .movie <término>
+┆ ${luffyST} .animeinfo
+┆ ${luffyST} .animesearch
+┆ ${luffyST} .cuevana
+┆ ${luffyST} .githubsearch
+┆ ${luffyST} .searchhentai
+┆ ${luffyST} .google *<búsqueda>*
+┆ ${luffyST} .imagen *<query>*
+┆ ${luffyST} .infoanime
+┆ ${luffyST} .githubstalk *<query>*
+┆ ${luffyST} .soundcloudsearch *<txt>*
+┆ ${luffyST} .pinterest
+┆ ${luffyST} .pornhubsearch
+┆ ${luffyST} .spotifysearch *<texto>*
+┆ ${luffyST} .ytsearch2 *<text>*
+┆ ${luffyST} .npmjs
+┆ ${luffyST} .gnula
+┆ ${luffyST} .apksearch
+┆ ${luffyST} .wikis
+┆ ${luffyST} .tiktoksearch *<txt>*
+┆ ${luffyST} .tweetposts
+┆ ${luffyST} .xnxxs
+┆ ${luffyST} .xvsearch
+┆ ${luffyST} .yts
+┆ ${luffyST} .fdroidsearch *<término>*
+┆ ${luffyST} .happymodsearch *<búsqueda>*
+┆ ${luffyST} .cinecalidadsearch *<búsqueda>*
+┆ ${luffyST} .yahoosearch *<búsqueda>*
+┆ ${luffyST} .movie *<término>*
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[𝐒𝐔𝐁 𝐁𝐎𝐓𝐒]═✩═ 💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .qr
-┆ ${med} .code
-┆ ${med} .token
-┆ ${med} .sockets
-┆ ${med} .deletesesion
-┆ ${med} .pausarai
-╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
-
-    ֪╔═══════════════════╗
-╭╼.  🧃 ═✩═[ 𝐅𝐔𝐍 ]═✩═ 💛
-┆֪࣪  ╚═══════════════════╝
-┆ ${med} .gay <@tag> | <nombre> 
-┆ ${med} .lesbiana <@tag> | <nombre> 
-┆ ${med} .pajero <@tag> | <nombre> 
-┆ ${med} .pajera <@tag> | <nombre> 
-┆ ${med} .puto <@tag> | <nombre> 
-┆ ${med} .puta <@tag> | <nombre> 
-┆ ${med} .manco <@tag> | <nombre> 
-┆ ${med} .manca <@tag> | <nombre> 
-┆ ${med} .rata <@tag> | <nombre>
-┆ ${med} .prostituta <@tag> | <nombre> 
-┆ ${med} .amigorandom
-┆ ${med} .jalamela
-┆ ${med} .simi
-┆ ${med} .chiste
-┆ ${med} .consejo
-┆ ${med} .doxear *<mension>*
-┆ ${med} .facto
-┆ ${med} .reto
-┆ ${med} .verdad
-┆ ${med} .prostituto *<@tag> | <nombre>*
-┆ ${med} .formarpareja
-┆ ${med} .formarpareja5
-┆ ${med} .frase
-┆ ${med} .huevo *@user*
-┆ ${med} .chupalo *<mencion>*
-┆ ${med} .aplauso *<mencion>*
-┆ ${med} .marron *<mencion>*
-┆ ${med} .suicidar
-┆ ${med} .iqtest <mencion>*
-┆ ${med} .meme
-┆ ${med} .morse
-┆ ${med} .nombreninja *<texto>*
-┆ ${med} .paja
-┆ ${med} .personalidad *<mencion>*
-┆ ${med} .pregunta 
-┆ ${med} .piropo 
-┆ ${med} .zodiac *2002 02 25*
-┆ ${med} .ship 
-┆ ${med} .sorte 
-┆ ${med} .top *[texto]*
-┆ ${med} .formartrio *<mencion>*
-┆ ${med} .tt 
-╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
-
-    ֪╔═══════════════════╗
-╭╼.  🧃 ═✩═[ 𝐆𝐀𝐌𝐄 ]═✩═ 💛
-┆֪࣪  ╚═══════════════════╝
-┆ ${med} .ahorcado
-┆ ${med} .delxo
-┆ ${med} .genio *<pregunta>*
-┆ ${med} .math *<mode>*
-┆ ${med} .ppt 
-┆ ${med} .pvp
-┆ ${med} .sopa
-┆ ${med} .acertijo
-┆ ${med} .ttt
-╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
-
-    ֪╔═══════════════════╗
-╭╼.  🧃 ═✩═[ 𝐀𝐍𝐈𝐌𝐄 ]═✩═  💛
-┆֪࣪  ╚═══════════════════╝
-┆ ${med} .angry/enojado @tag
-┆ ${med} .bath/bañarse @tag
-┆ ${med} .bite/morder @tag
-┆ ${med} .bleh/lengua @tag
-┆ ${med} .blush/sonrojarse @tag
-┆ ${med} .bored/aburrido @tag
-┆ ${med} .nights/noches
-┆ ${med} .dias/days
-┆ ${med} .coffe/cafe @tag
-┆ ${med} .cry/llorar @tag
-┆ ${med} .cuddle/acurrucarse @tag
-┆ ${med} .dance/bailar @tag
-┆ ${med} .drunk/borracho @tag
-┆ ${med} .eat/comer @tag
-┆ ${med} .messi
-┆ ${med} .cr7
-┆ ${med} .facepalm/palmada @tag
-┆ ${med} .happy/feliz @tag
-┆ ${med} .hello/hola @tag
-┆ ${med} .hug/abrazar @tag
-┆ ${med} .kill/matar @tag
-┆ ${med} .kiss2/besar2 @tag
-┆ ${med} .kiss/besar @tag
-┆ ${med} .laugh/reirse @tag
-┆ ${med} .lick/lamer @tag
-┆ ${med} .love2/enamorada @tag
-┆ ${med} .patt/acariciar @tag
-┆ ${med} .poke/picar @tag
-┆ ${med} .pout/pucheros @tag
-┆ ${med} .ppcouple
-┆ ${med} .preg/embarazar @tag
-┆ ${med} .punch/golpear @tag
-┆ ${med} .run/correr @tag
-┆ ${med} .sad/triste @tag
-┆ ${med} .scared/asustada @tag
-┆ ${med} .seduce/seducir @tag
-┆ ${med} .shy/timida @tag
-┆ ${med} .slap/bofetada @tag
-┆ ${med} .sleep/dormir @tag
-┆ ${med} .smoke/fumar @tag
-┆ ${med} .think/pensando @tag
-┆ ${med} .undress/encuerar @tag
-┆ ${med} .waifu
-╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
-
-    ֪╔═══════════════════╗
-╭╼.  🧃 ═✩═[ 𝐏𝐄𝐑𝐅𝐈𝐋 ]═✩═  💛
-┆֪࣪  ╚═══════════════════╝
-┆ ${med} .reg
-┆ ${med} .unreg
-┆ ${med} .profile
-┆ ${med} .marry *[mension / etiquetar]*
-┆ ${med} .divorce
-┆ ${med} .setgenre *<text>*
-┆ ${med} .delgenre
-┆ ${med} .setbirth *<text>*
-┆ ${med} .delbirth
-┆ ${med} .setdesc *<text>*
-┆ ${med} .deldesc
+┆ ${luffyST} .qr
+┆ ${luffyST} .code
+┆ ${luffyST} .token
+┆ ${luffyST} .sockets
+┆ ${luffyST} .deletesesion
+┆ ${luffyST} .pausarai
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .animedl
-┆ ${med} .fb
-┆ ${med} .sound
-┆ ${med} .gitclone *<url git>*
-┆ ${med} .gdrive
-┆ ${med} .ig
-┆ ${med} .mediafire *<url>*
-┆ ${med} .mega
-┆ ${med} .apk *<nombre>*
-┆ ${med} .pinvid *<link>*
-┆ ${med} .apk2 *<busqueda>*
-┆ ${med} .npmdl
-┆ ${med} .tt2
-┆ ${med} .kwaidl
-┆ ${med} .likee *<url>*
-┆ ${med} .aplay2 • applemusic2
-┆ ${med} .capcut *<url>*
-┆ ${med} .play
-┆ ${med} .play2
-┆ ${med} .ytmp3doc
-┆ ${med} .ytmp4doc
-┆ ${med} .yta
-┆ ${med} .ytv
-┆ ${med} .mp3
-┆ ${med} .tiktokrandom
-┆ ${med} .spotify
-┆ ${med} .tiktokhd
-┆ ${med} .tiktoktrends
-┆ ${med} .snapchat *<link>*
-┆ ${med} .terabox
-┆ ${med} .tiktok *<url>*
-┆ ${med} .tiktokmp3 *<url>*
-┆ ${med} .tiktokimg <url>
-┆ ${med} .twitter <url>
-┆ ${med} .xvideosdl
-┆ ${med} .xnxxdl
-┆ ${med} .pindl
+┆ ${luffyST} .aniluffySTl
+┆ ${luffyST} .fb
+┆ ${luffyST} .sound
+┆ ${luffyST} .gitclone *<url git>*
+┆ ${luffyST} .gdrive
+┆ ${luffyST} .ig
+┆ ${luffyST} .luffySTiafire *<url>*
+┆ ${luffyST} .mega
+┆ ${luffyST} .apk *<nombre>*
+┆ ${luffyST} .pinvid *<link>*
+┆ ${luffyST} .apk2 *<busqueda>*
+┆ ${luffyST} .npmdl
+┆ ${luffyST} .tt2
+┆ ${luffyST} .kwaidl
+┆ ${luffyST} .likee *<url>*
+┆ ${luffyST} .aplay2 • applemusic2
+┆ ${luffyST} .capcut *<url>*
+┆ ${luffyST} .play
+┆ ${luffyST} .play2
+┆ ${luffyST} .ytmp3doc
+┆ ${luffyST} .ytmp4doc
+┆ ${luffyST} .yta
+┆ ${luffyST} .ytv
+┆ ${luffyST} .mp3
+┆ ${luffyST} .tiktokrandom
+┆ ${luffyST} .spotify
+┆ ${luffyST} .tiktokhd
+┆ ${luffyST} .tiktoktrends
+┆ ${luffyST} .snapchat *<link>*
+┆ ${luffyST} .terabox
+┆ ${luffyST} .tiktok *<url>*
+┆ ${luffyST} .tiktokmp3 *<url>*
+┆ ${luffyST} .tiktokimg *<url>*
+┆ ${luffyST} .twitter *<url>*
+┆ ${luffyST} .xvideosdl
+┆ ${luffyST} .xnxxdl
+┆ ${luffyST} .pindl
+╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
+
+    ֪╔═══════════════════╗
+╭╼.  🧃 ═✩═[ 𝐅𝐔𝐍 ]═✩═ 💛
+┆֪࣪  ╚═══════════════════╝
+┆ ${luffyST} .gay <@tag> | <nombre> 
+┆ ${luffyST} .lesbiana <@tag> | <nombre> 
+┆ ${luffyST} .pajero <@tag> | <nombre> 
+┆ ${luffyST} .pajera <@tag> | <nombre> 
+┆ ${luffyST} .puto <@tag> | <nombre> 
+┆ ${luffyST} .puta <@tag> | <nombre> 
+┆ ${luffyST} .manco <@tag> | <nombre> 
+┆ ${luffyST} .manca <@tag> | <nombre> 
+┆ ${luffyST} .rata <@tag> | <nombre>
+┆ ${luffyST} .prostituta <@tag> | <nombre> 
+┆ ${luffyST} .amigorandom
+┆ ${luffyST} .jalamela
+┆ ${luffyST} .simi
+┆ ${luffyST} .chiste
+┆ ${luffyST} .consejo
+┆ ${luffyST} .doxear *<mension>*
+┆ ${luffyST} .facto
+┆ ${luffyST} .reto
+┆ ${luffyST} .verdad
+┆ ${luffyST} .prostituto *<@tag> | <nombre>*
+┆ ${luffyST} .formarpareja
+┆ ${luffyST} .formarpareja5
+┆ ${luffyST} .frase
+┆ ${luffyST} .huevo *@user*
+┆ ${luffyST} .chupalo *<mencion>*
+┆ ${luffyST} .aplauso *<mencion>*
+┆ ${luffyST} .marron *<mencion>*
+┆ ${luffyST} .suicidar
+┆ ${luffyST} .iqtest <mencion>*
+┆ ${luffyST} .meme
+┆ ${luffyST} .morse
+┆ ${luffyST} .nombreninja *<texto>*
+┆ ${luffyST} .paja
+┆ ${luffyST} .personalidad *<mencion>*
+┆ ${luffyST} .pregunta 
+┆ ${luffyST} .piropo 
+┆ ${luffyST} .zodiac *2002 02 25*
+┆ ${luffyST} .ship 
+┆ ${luffyST} .sorte 
+┆ ${luffyST} .top *[texto]*
+┆ ${luffyST} .formartrio *<mencion>*
+┆ ${luffyST} .tt 
+╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
+
+    ֪╔═══════════════════╗
+╭╼.  🧃 ═✩═[ 𝐆𝐀𝐌𝐄 ]═✩═ 💛
+┆֪࣪  ╚═══════════════════╝
+┆ ${luffyST} .ahorcado
+┆ ${luffyST} .delxo
+┆ ${luffyST} .genio *<pregunta>*
+┆ ${luffyST} .math *<mode>*
+┆ ${luffyST} .ppt 
+┆ ${luffyST} .pvp
+┆ ${luffyST} .sopa
+┆ ${luffyST} .acertijo
+┆ ${luffyST} .ttt
+╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
+
+    ֪╔═══════════════════╗
+╭╼.  🧃 ═✩═[ 𝐀𝐍𝐈𝐌𝐄 ]═✩═  💛
+┆֪࣪  ╚═══════════════════╝
+┆ ${luffyST} .angry/enojado @tag
+┆ ${luffyST} .bath/bañarse @tag
+┆ ${luffyST} .bite/morder @tag
+┆ ${luffyST} .bleh/lengua @tag
+┆ ${luffyST} .blush/sonrojarse @tag
+┆ ${luffyST} .bored/aburrido @tag
+┆ ${luffyST} .nights/noches
+┆ ${luffyST} .dias/days
+┆ ${luffyST} .coffe/cafe @tag
+┆ ${luffyST} .cry/llorar @tag
+┆ ${luffyST} .cuddle/acurrucarse @tag
+┆ ${luffyST} .dance/bailar @tag
+┆ ${luffyST} .drunk/borracho @tag
+┆ ${luffyST} .eat/comer @tag
+┆ ${luffyST} .messi
+┆ ${luffyST} .cr7
+┆ ${luffyST} .facepalm/palmada @tag
+┆ ${luffyST} .happy/feliz @tag
+┆ ${luffyST} .hello/hola @tag
+┆ ${luffyST} .hug/abrazar @tag
+┆ ${luffyST} .kill/matar @tag
+┆ ${luffyST} .kiss2/besar2 @tag
+┆ ${luffyST} .kiss/besar @tag
+┆ ${luffyST} .laugh/reirse @tag
+┆ ${luffyST} .lick/lamer @tag
+┆ ${luffyST} .love2/enamorada @tag
+┆ ${luffyST} .patt/acariciar @tag
+┆ ${luffyST} .poke/picar @tag
+┆ ${luffyST} .pout/pucheros @tag
+┆ ${luffyST} .ppcouple
+┆ ${luffyST} .preg/embarazar @tag
+┆ ${luffyST} .punch/golpear @tag
+┆ ${luffyST} .run/correr @tag
+┆ ${luffyST} .sad/triste @tag
+┆ ${luffyST} .scared/asustada @tag
+┆ ${luffyST} .seduce/seducir @tag
+┆ ${luffyST} .shy/timida @tag
+┆ ${luffyST} .slap/bofetada @tag
+┆ ${luffyST} .sleep/dormir @tag
+┆ ${luffyST} .smoke/fumar @tag
+┆ ${luffyST} .think/pensando @tag
+┆ ${luffyST} .undress/encuerar @tag
+┆ ${luffyST} .waifu
+╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
+
+    ֪╔═══════════════════╗
+╭╼.  🧃 ═✩═[ 𝐏𝐄𝐑𝐅𝐈𝐋 ]═✩═  💛
+┆֪࣪  ╚═══════════════════╝
+┆ ${luffyST} .reg
+┆ ${luffyST} .unreg
+┆ ${luffyST} .profile
+┆ ${luffyST} .marry *[mension / etiquetar]*
+┆ ${luffyST} .divorce
+┆ ${luffyST} .setgenre *<text>*
+┆ ${luffyST} .delgenre
+┆ ${luffyST} .setbirth *<text>*
+┆ ${luffyST} .delbirth
+┆ ${luffyST} .setdesc *<text>*
+┆ ${luffyST} .deldesc
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐒𝐓𝐀𝐋𝐊 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .tiktokstalk *<usuario>*
-┆ ${med} .kwaistalk *<usuario>*
-┆ ${med} .telegramstalk *<nombre_usuario>*
-┆ ${med} .youtubestalk *<nombre de usuario>*
-┆ ${med} .instagramstalk *<usuario>*
+┆ ${luffyST} .tiktokstalk *<usuario>*
+┆ ${luffyST} .kwaistalk *<usuario>*
+┆ ${luffyST} .telegramstalk *<nombre_usuario>*
+┆ ${luffyST} .youtubestalk *<nombre de usuario>*
+┆ ${luffyST} .instagramstalk *<usuario>*
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .comprarpremium
-┆ ${med} .premium
-┆ ${med} .vip
-┆ ${med} .spamwa <number>|<mesage>|<no of messages>
+┆ ${luffyST} .comprarpremium
+┆ ${luffyST} .premium
+┆ ${luffyST} .vip
+┆ ${luffyST} .spamwa <number>|<mesage>|<no of messages>
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .aventura
-┆ ${med} .baltop
-┆ ${med} .bank / bal
-┆ ${med} .cazar 
-┆ ${med} .codigo *<cantida de coins>*
-┆ ${med} .canjear *<código>*
-┆ ${med} .cartera
-┆ ${med} .apostar *<cantidad>*
-┆ ${med} .cf
-┆ ${med} .cofre
-┆ ${med} .crimen
-┆ ${med} .daily
-┆ ${med} .depositar 
-┆ ${med} .explorar
-┆ ${med} .gremio
-┆ ${med} .regalo
-┆ ${med} .halloween
-┆ ${med} .heal
-┆ ${med} .inventario 
-┆ ${med} .mensual
-┆ ${med} .mazmorra
-┆ ${med} .minar
-┆ ${med} .navidad
-┆ ${med} .retirar
-┆ ${med} .robar
-┆ ${med} .robarxp
-┆ ${med} .ruleta *<cantidad> <color>*
-┆ ${med} .buyall
-┆ ${med} .buy
-┆ ${med} .protituirse
-┆ ${med} .work
-┆ ${med} .pay / transfer 
-┆ ${med} .semanal
-┆ ${med} .levelup
-┆ ${med} .lvl @user
-┆ ${med} .slot *<apuesta>*
+┆ ${luffyST} .aventura
+┆ ${luffyST} .baltop
+┆ ${luffyST} .bank / bal
+┆ ${luffyST} .cazar 
+┆ ${luffyST} .codigo *<cantida de coins>*
+┆ ${luffyST} .canjear *<código>*
+┆ ${luffyST} .cartera
+┆ ${luffyST} .apostar *<cantidad>*
+┆ ${luffyST} .cf
+┆ ${luffyST} .cofre
+┆ ${luffyST} .crimen
+┆ ${luffyST} .daily
+┆ ${luffyST} .depositar 
+┆ ${luffyST} .explorar
+┆ ${luffyST} .gremio
+┆ ${luffyST} .regalo
+┆ ${luffyST} .halloween
+┆ ${luffyST} .heal
+┆ ${luffyST} .inventario 
+┆ ${luffyST} .mensual
+┆ ${luffyST} .mazmorra
+┆ ${luffyST} .minar
+┆ ${luffyST} .navidad
+┆ ${luffyST} .retirar
+┆ ${luffyST} .robar
+┆ ${luffyST} .robarxp
+┆ ${luffyST} .ruleta *<cantidad> <color>*
+┆ ${luffyST} .buyall
+┆ ${luffyST} .buy
+┆ ${luffyST} .protituirse
+┆ ${luffyST} .work
+┆ ${luffyST} .pay / transfer 
+┆ ${luffyST} .semanal
+┆ ${luffyST} .levelup
+┆ ${luffyST} .lvl @user
+┆ ${luffyST} .slot *<apuesta>*
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐆𝐀𝐂𝐇𝐀 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .rw
-┆ ${med} .reclamar 
-┆ ${med} .harem
-┆ ${med} .waifuimage
-┆ ${med} .charinfo
-┆ ${med} .topwaifus *[pagina]*
-┆ ${med} .regalar *<nombre del personaje> @usuario*
-┆ ${med} .vote *<personaje>*
+┆ ${luffyST} .rw
+┆ ${luffyST} .reclamar 
+┆ ${luffyST} .harem
+┆ ${luffyST} .waifuimage
+┆ ${luffyST} .charinfo
+┆ ${luffyST} .topwaifus *[pagina]*
+┆ ${luffyST} .regalar *<nombre del personaje> @usuario*
+┆ ${luffyST} .vote *<personaje>*
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .sticker *<img>*
-┆ ${med} .sticker *<url>*
-┆ ${med} .setmeta
-┆ ${med} .delmeta
-┆ ${med} .bratvid *<texto>*
-┆ ${med} .pfp *@user*
-┆ ${med} .qc
-┆ ${med} .toimg *(reply)*
-┆ ${med} .brat
-┆ ${med} .bratvid *<texto>*
-┆ ${med} .emojimix  *<emoji+emoji>*
-┆ ${med} .wm *<packname>|<author>*
+┆ ${luffyST} .sticker *<img>*
+┆ ${luffyST} .sticker *<url>*
+┆ ${luffyST} .setmeta
+┆ ${luffyST} .delmeta
+┆ ${luffyST} .bratvid *<texto>*
+┆ ${luffyST} .pfp *@user*
+┆ ${luffyST} .qc
+┆ ${luffyST} .toimg *(reply)*
+┆ ${luffyST} .brat
+┆ ${luffyST} .bratvid *<texto>*
+┆ ${luffyST} .emojimix  *<emoji+emoji>*
+┆ ${luffyST} .wm *<packname>|<author>*
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐇𝐄𝐑𝐑𝐀𝐌𝐈𝐄𝐍𝐓𝐀𝐒 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .letra *<texto>*
-┆ ${med} .fake
-┆ ${med} .hd
-┆ ${med} .detectar
-┆ ${med} .clima *<ciudad/país>*
-┆ ${med} .join
-┆ ${med} .nuevafotochannel
-┆ ${med} .nosilenciarcanal
-┆ ${med} .silenciarcanal
-┆ ${med} .noseguircanal
-┆ ${med} .seguircanal 
-┆ ${med} .avisoschannel 
-┆ ${med} .resiviravisos 
-┆ ${med} .inspect 
-┆ ${med} .inspeccionar 
-┆ ${med} .eliminarfotochannel 
-┆ ${med} .reactioneschannel 
-┆ ${med} .reaccioneschannel 
-┆ ${med} .nuevonombrecanal 
-┆ ${med} .nuevadescchannel
-┆ ${med} .setavatar
-┆ ${med} .setbanner
-┆ ${med} .seticono
-┆ ${med} .setmoneda
-┆ ${med} .setname nombre1/nombre2
-┆ ${med} .cal *<ecuacion>*
-┆ ${med} .horario
-┆ ${med} .read
-┆ ${med} .traducir <idoma>
-┆ ${med} .say
-┆ ${med} .whatmusic <audio/video>
-┆ ${med} .paisinfo
-┆ ${med} .ssweb
-┆ ${med} .tamaño *<cantidad>*
-┆ ${med} .document *<audio/video>*
-┆ ${med} .translate
-┆ ${med} .up
-┆ ${med} .enhance
-┆ ${med} .wikipedia
+┆ ${luffyST} .letra *<texto>*
+┆ ${luffyST} .fake
+┆ ${luffyST} .hd
+┆ ${luffyST} .detectar
+┆ ${luffyST} .clima *<ciudad/país>*
+┆ ${luffyST} .join
+┆ ${luffyST} .nuevafotochannel
+┆ ${luffyST} .nosilenciarcanal
+┆ ${luffyST} .silenciarcanal
+┆ ${luffyST} .noseguircanal
+┆ ${luffyST} .seguircanal 
+┆ ${luffyST} .avisoschannel 
+┆ ${luffyST} .resiviravisos 
+┆ ${luffyST} .inspect 
+┆ ${luffyST} .inspeccionar 
+┆ ${luffyST} .eliminarfotochannel 
+┆ ${luffyST} .reactioneschannel 
+┆ ${luffyST} .reaccioneschannel 
+┆ ${luffyST} .nuevonombrecanal 
+┆ ${luffyST} .nuevadescchannel
+┆ ${luffyST} .setavatar
+┆ ${luffyST} .setbanner
+┆ ${luffyST} .seticono
+┆ ${luffyST} .setmoneda
+┆ ${luffyST} .setname nombre1/nombre2
+┆ ${luffyST} .cal *<ecuacion>*
+┆ ${luffyST} .horario
+┆ ${luffyST} .read
+┆ ${luffyST} .traducir <idoma>
+┆ ${luffyST} .say
+┆ ${luffyST} .whatmusic <audio/video>
+┆ ${luffyST} .paisinfo
+┆ ${luffyST} .ssweb
+┆ ${luffyST} .tamaño *<cantidad>*
+┆ ${luffyST} .document *<audio/video>*
+┆ ${luffyST} .translate
+┆ ${luffyST} .up
+┆ ${luffyST} .enhance
+┆ ${luffyST} .wikipedia
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐎𝐍 / 𝐎𝐅𝐅 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .welcome
-┆ ${med} .bienvenida
-┆ ${med} .antiprivado
-┆ ${med} .antiprivate
-┆ ${med} .restrict
-┆ ${med} .restringir
-┆ ${med} .antibot
-┆ ${med} .antibots
-┆ ${med} .autoaceptar
-┆ ${med} .aceptarauto
-┆ ${med} .autorechazar
-┆ ${med} .rechazarauto
-┆ ${med} .autoresponder
-┆ ${med} .autorespond
-┆ ${med} .antisubbots
-┆ ${med} .antibot2
-┆ ${med} .modoadmin
-┆ ${med} .soloadmin
-┆ ${med} .reaction
-┆ ${med} .reaccion
-┆ ${med} .nsfw
-┆ ${med} .modohorny
-┆ ${med} .antispam
-┆ ${med} .jadibotmd
-┆ ${med} .modejadibot
-┆ ${med} .subbots
-┆ ${med} .detect
-┆ ${med} .avisos
-┆ ${med} .antilink
-┆ ${med} .audios
-┆ ${med} .antiver
-┆ ${med} .antiocultar
-┆ ${med} .antilink2
-┆ ${med} .antiarabe
+┆ ${luffyST} .welcome
+┆ ${luffyST} .bienvenida
+┆ ${luffyST} .antiprivado
+┆ ${luffyST} .antiprivate
+┆ ${luffyST} .restrict
+┆ ${luffyST} .restringir
+┆ ${luffyST} .antibot
+┆ ${luffyST} .antibots
+┆ ${luffyST} .autoaceptar
+┆ ${luffyST} .aceptarauto
+┆ ${luffyST} .autorechazar
+┆ ${luffyST} .rechazarauto
+┆ ${luffyST} .autoresponder
+┆ ${luffyST} .autorespond
+┆ ${luffyST} .antisubbots
+┆ ${luffyST} .antibot2
+┆ ${luffyST} .modoadmin
+┆ ${luffyST} .soloadmin
+┆ ${luffyST} .reaction
+┆ ${luffyST} .reaccion
+┆ ${luffyST} .nsfw
+┆ ${luffyST} .modohorny
+┆ ${luffyST} .antispam
+┆ ${luffyST} .jadibotmd
+┆ ${luffyST} .modejadibot
+┆ ${luffyST} .subbots
+┆ ${luffyST} .detect
+┆ ${luffyST} .avisos
+┆ ${luffyST} .antilink
+┆ ${luffyST} .audios
+┆ ${luffyST} .antiver
+┆ ${luffyST} .antiocultar
+┆ ${luffyST} .antilink2
+┆ ${luffyST} .antiarabe
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐆𝐑𝐔𝐏𝐎𝐒 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .admins
-┆ ${med} .agregar
-┆ ${med} .advertencia <@user>
-┆ ${med} .delwarn
-┆ ${med} .grupo abrir / cerrar
-┆ ${med} .group open / close
-┆ ${med} .delete
-┆ ${med} .demote <@user>
-┆ ${med} .promote <@user>
-┆ ${med} .encuesta <text|text2>
-┆ ${med} .kickfantasmas
-┆ ${med} .gpbanner
-┆ ${med} .gpdesc
-┆ ${med} .gpname
-┆ ${med} .hidetag
-┆ ${med} .infogrupo
-┆ ${med} .kick <@user>
-┆ ${med} .kicknum
-┆ ${med} .listonline
-┆ ${med} .link
-┆ ${med} .listadv
-┆ ${med} .mute
-┆ ${med} .unmute
-┆ ${med} .config
-┆ ${med} .restablecer
-┆ ${med} .setbye
-┆ ${med} .setwelcome
-┆ ${med} .testwelcome
-┆ ${med} .setemoji <emoji>
-┆ ${med} .invocar *<mensaje opcional>*
+┆ ${luffyST} .admins
+┆ ${luffyST} .agregar
+┆ ${luffyST} .advertencia <@user>
+┆ ${luffyST} .delwarn
+┆ ${luffyST} .grupo abrir / cerrar
+┆ ${luffyST} .group open / close
+┆ ${luffyST} .delete
+┆ ${luffyST} .demote <@user>
+┆ ${luffyST} .promote <@user>
+┆ ${luffyST} .encuesta <text|text2>
+┆ ${luffyST} .kickfantasmas
+┆ ${luffyST} .gpbanner
+┆ ${luffyST} .gpdesc
+┆ ${luffyST} .gpname
+┆ ${luffyST} .hidetag
+┆ ${luffyST} .infogrupo
+┆ ${luffyST} .kick <@user>
+┆ ${luffyST} .kicknum
+┆ ${luffyST} .listonline
+┆ ${luffyST} .link
+┆ ${luffyST} .listadv
+┆ ${luffyST} .mute
+┆ ${luffyST} .unmute
+┆ ${luffyST} .config
+┆ ${luffyST} .restablecer
+┆ ${luffyST} .setbye
+┆ ${luffyST} .setwelcome
+┆ ${luffyST} .testwelcome
+┆ ${luffyST} .setemoji <emoji>
+┆ ${luffyST} .invocar *<mensaje opcional>*
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐍𝐒𝐅𝐖 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .sixnine/69 @tag
-┆ ${med} .anal/culiar @tag
-┆ ${med} .blowjob/mamada @tag
-┆ ${med} .boobjob/rusa @tag
-┆ ${med} .cum/leche @tag
-┆ ${med} .fap/paja @tag
-┆ ${med} .follar @tag
-┆ ${med} .fuck/coger @tag
-┆ ${med} .footjob/pies @tag
-┆ ${med} .fuck2/coger2 @tag
-┆ ${med} .grabboobs/agarrartetas @tag
-┆ ${med} .grop/manosear @tag
-┆ ${med} .penetrar @user
-┆ ${med} .lickpussy/coño @tag
-┆ ${med} .r34 <tag>
-┆ ${med} .sexo/sex @tag
-┆ ${med} .spank/nalgada @tag
-┆ ${med} .suckboobs/chupartetas @tag
-┆ ${med} .violar/perra @tag
-┆ ${med} .lesbianas/tijeras @tag
-┆ ${med} .pack
-┆ ${med} .tetas
-┆ ${med} .undress/encuerar
+┆ ${luffyST} .sixnine/69 @tag
+┆ ${luffyST} .anal/culiar @tag
+┆ ${luffyST} .blowjob/mamada @tag
+┆ ${luffyST} .boobjob/rusa @tag
+┆ ${luffyST} .cum/leche @tag
+┆ ${luffyST} .fap/paja @tag
+┆ ${luffyST} .follar @tag
+┆ ${luffyST} .fuck/coger @tag
+┆ ${luffyST} .footjob/pies @tag
+┆ ${luffyST} .fuck2/coger2 @tag
+┆ ${luffyST} .grabboobs/agarrartetas @tag
+┆ ${luffyST} .grop/manosear @tag
+┆ ${luffyST} .penetrar @user
+┆ ${luffyST} .lickpussy/coño @tag
+┆ ${luffyST} .r34 <tag>
+┆ ${luffyST} .sexo/sex @tag
+┆ ${luffyST} .spank/nalgada @tag
+┆ ${luffyST} .suckboobs/chupartetas @tag
+┆ ${luffyST} .violar/perra @tag
+┆ ${luffyST} .lesbianas/tijeras @tag
+┆ ${luffyST} .pack
+┆ ${luffyST} .tetas
+┆ ${luffyST} .undress/encuerar
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐎𝐖𝐍𝐄𝐑 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .addcoins *<@user>*
-┆ ${med} .addowner / delowner
-┆ ${med} .addprem [@user] <days>
-┆ ${med} .añadirxp
-┆ ${med} .copia
-┆ ${med} .autoadmin
-┆ ${med} .banuser <@tag> <razón>
-┆ ${med} .banlist
-┆ ${med} .bcgc
-┆ ${med} .block / unblock
-┆ ${med} .blocklist
-┆ ${med} .chetar *@user* / *<número>*
-┆ ${med} .cleartmp
-┆ ${med} .creargc
-┆ ${med} .deletefile
-┆ ${med} .delprem <@user>
-┆ ${med} .deschetar *@user* / *<número>*
-┆ ${med} .dsowner
-┆ ${med} =>
-┆ ${med} >
-┆ ${med} .fetch
-┆ ${med} .getplugin
-┆ ${med} .grouplist
-┆ ${med} .salir
-┆ ${med} .let
-┆ ${med} .prefix [prefix]
-┆ ${med} .quitarcoin *<@user>* / all
-┆ ${med} .quitarxp *<@user>*
-┆ ${med} .resetprefix
-┆ ${med} .restablecerdatos
-┆ ${med} .restart / reiniciar
-┆ ${med} .reunion
-┆ ${med} .savefile <ruta/nombre>
-┆ ${med} .saveplugin
-┆ ${med} .setcmd *<texto>*
-┆ ${med} .delcmd
-┆ ${med} .listcmd
-┆ ${med} .setimage
-┆ ${med} .setstatus <teks>
-┆ ${med} .spam2
-┆ ${med} .unbanuser <@tag>
-┆ ${med} .ip <alamat ip>
-┆ ${med} .update / fix
+┆ ${luffyST} .addcoins *<@user>*
+┆ ${luffyST} .addowner / delowner
+┆ ${luffyST} .addprem [@user] <days>
+┆ ${luffyST} .añadirxp
+┆ ${luffyST} .copia
+┆ ${luffyST} .autoadmin
+┆ ${luffyST} .banuser <@tag> <razón>
+┆ ${luffyST} .banlist
+┆ ${luffyST} .bcgc
+┆ ${luffyST} .block / unblock
+┆ ${luffyST} .blocklist
+┆ ${luffyST} .chetar *@user* / *<número>*
+┆ ${luffyST} .cleartmp
+┆ ${luffyST} .creargc
+┆ ${luffyST} .deletefile
+┆ ${luffyST} .delprem <@user>
+┆ ${luffyST} .deschetar *@user* / *<número>*
+┆ ${luffyST} .dsowner
+┆ ${luffyST} =>
+┆ ${luffyST} >
+┆ ${luffyST} .fetch
+┆ ${luffyST} .getplugin
+┆ ${luffyST} .grouplist
+┆ ${luffyST} .salir
+┆ ${luffyST} .let
+┆ ${luffyST} .prefix [prefix]
+┆ ${luffyST} .quitarcoin *<@user>* / all
+┆ ${luffyST} .quitarxp *<@user>*
+┆ ${luffyST} .resetprefix
+┆ ${luffyST} .restablecerdatos
+┆ ${luffyST} .restart / reiniciar
+┆ ${luffyST} .reunion
+┆ ${luffyST} .savefile <ruta/nombre>
+┆ ${luffyST} .saveplugin
+┆ ${luffyST} .setcmd *<texto>*
+┆ ${luffyST} .delcmd
+┆ ${luffyST} .listcmd
+┆ ${luffyST} .setimage
+┆ ${luffyST} .setstatus <teks>
+┆ ${luffyST} .spam2
+┆ ${luffyST} .unbanuser <@tag>
+┆ ${luffyST} .ip <alamat ip>
+┆ ${luffyST} .update / fix
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐈𝐀 - 𝐀𝐈 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .dalle
-┆ ${med} .demo *<texto>*
-┆ ${med} .flux *<texto>*
-┆ ${med} .gemini
-┆ ${med} .ia
-┆ ${med} .llama
+┆ ${luffyST} .dalle
+┆ ${luffyST} .demo *<texto>*
+┆ ${luffyST} .flux *<texto>*
+┆ ${luffyST} .gemini
+┆ ${luffyST} .ia
+┆ ${luffyST} .llama
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
     ֪╔═══════════════════╗
 ╭╼.  🧃 ═✩═[ 𝐓𝐑𝐀𝐍𝐒𝐅𝐎𝐑𝐌𝐀𝐃𝐎𝐑 ]═✩═  💛
 ┆֪࣪  ╚═══════════════════╝
-┆ ${med} .tourl <imagen>
-┆ ${med} .catbox
-┆ ${med} .tourl3
-┆ ${med} .togifaud
-┆ ${med} .tomp3
-┆ ${med} .tovideo
-┆ ${med} .tts <lang> <teks>
-┆ ${med} .tts2
+┆ ${luffyST} .tourl <imagen>
+┆ ${luffyST} .catbox
+┆ ${luffyST} .tourl3
+┆ ${luffyST} .togifaud
+┆ ${luffyST} .tomp3
+┆ ${luffyST} .tovideo
+┆ ${luffyST} .tts <lang> <teks>
+┆ ${luffyST} .tts2
 ╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
 
 © ${textbot}`.trim();  

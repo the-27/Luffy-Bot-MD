@@ -17,20 +17,21 @@ global.botNumber = '' //Ejemplo: 573218138672
 
 global.owner = [
 // <-- Número @s.whatsapp.net -->
-  ['51969214380', '🜲 Propietario 🜲', true],
-  ['51994114690'],
-  ['51919199620'],
-  ['51988013368'], 
+  ['51969214380', '🎄 Propietario', true],
+  ['51994114690', 'creador 2 🌛', true],
+  ['51919199620', 'creador 3 ☄️', true],
+  ['51988013368'],
+  ['527721892735'],
   
 // <-- Número @lid -->
-  ['193196806148194', 'black', true],
-  ['193196806148194', 'black', true], 
-  ['52772 1892735', ' no ase nd', true]
+  ['193196806148194', '🎄 Propietario', true],
+  ['193196806148194', 'creador 2 🌛', true],
+  ['193196806148194', 'creador 3 ☄️', true]
 ];
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.mods = []
+global.mods = ['51969214380']
 global.suittag = ['51969214380'] 
 global.prems = []
 
@@ -51,7 +52,7 @@ global.packname = '🎄  𝒍𝒖𝒇𝒇𝒚 𝒃𝒐𝒕 𝑴𝑫  🎋'
 global.botname = '✦⃟⛧ _𝑳𝑼𝑭𝑭𝒀⛧ 𝑩𝑶𝑻 𝑴𝑫_ 🤖┋⃟✧'
 global.wm = '◟ＬＵＦＦＹ ＢＯＴ ＭＤ◞'
 global.author = 'mᥲძᥱ ᑲᥡ : 🌈ᵀ͢ᴴᴱ𝄟⏤͟͟͞͞⃝Black'
-global.dev = '୧ㅤ Tʜᴇ Bʟᴀᴄᴋㅤ🎋'
+global.dev = '୧ㅤミ★ 》 Tʜᴇ Bʟᴀᴄᴋ 𝘰𝘧𝘤《★彡 🎋'
 global.bot = 'LUFFY BOT'
 global.textbot = '𝕃𝕌𝔽𝔽𝕐 𝔹𝕆𝕋 𝕏 𝔹𝕃𝔸ℂ𝕂'
 global.etiqueta = '@ʙʟᴀᴄᴋ.ᴏғᴄ'
@@ -96,6 +97,6 @@ global.moment = moment
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
-  console.log(chalk.redBright("Update 'settings.js'"))
+  console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })

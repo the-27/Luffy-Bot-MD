@@ -11,27 +11,28 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
     throw false;
   }
 
-  const pesan = args.length ? args.join(' ') : 'Sin mensaje';
+  const pesan = args.length ? args.join(' ') : '¡Sean bienvenidos, El que no habla es fan de los BTS!';
   const mj = `°◦⃝📑 *𝙼𝙴𝙽𝚂𝙰𝙹𝙴:*\n│ ${pesan}`;
   const groupName = await conn.getName(m.chat);
 
-  const teksLines = [
+ 
+  let teks = [
     `╭══〔 🦠 𝒓𝒊𝒏 𝒊𝒕𝒐𝒔𝒉𝒊 💫 〕══╮`,
     `│ 🥥 𝑀𝐸𝑁𝐶𝐼𝑂𝑁 𝐺𝐸𝑁𝐸𝑅𝐴𝐿 🥞`,
     `│ 🧃 *𝙼𝙸𝙴𝙼𝙱𝚁𝙾𝚂*: ${participants.length}`,
     `│ 🍁 *𝙶𝚁𝚄𝙿𝙾*: ${groupName}`,
-    `├─╰➤ ${mj}`,
+    `├─➤ ${mj}`
   ];
 
   for (const mem of participants) {
-    teksLines.push(`│🥥 ${customEmoji} @${mem.id.split('@')[0]}`);
+    teks.push(`│ ${customEmoji} @${mem.id.split('@')[0]}`);
   }
 
-  teksLines.push(`╰──────────────༓`);
-  const teks = teksLines.join('\n');
+  teks.push(`╰──────────────༓`);
+  const finalText = teks.join('\n');
 
   await conn.sendMessage(m.chat, {
-    text: teks,
+    text: finalText,
     mentions: participants.map(p => p.id),
     contextInfo: {
       mentionedJid: participants.map(p => p.id),
@@ -41,7 +42,8 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
         thumbnailUrl: logo,
         mediaType: 1,
         showAdAttribution: true,
-        renderLargerThumbnail: true
+        renderLargerThumbnail: true,
+        sourceUrl: 'https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U',
       }
     }
   }, { quoted: m });

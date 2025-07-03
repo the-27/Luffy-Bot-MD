@@ -30,35 +30,43 @@ let crm3 = "SBpbmZvLWRvbmFyLmpz"
 let crm4 = "IF9hdXRvcmVzcG9uZGVyLmpzIGluZm8tYm90Lmpz"
 let drm1 = ""
 let drm2 = ""
-let rtx = `━━━━━━━━━━━━━━━━━ 
-ౄ⃝᭄֟፝֟𓆩 *_Con otro celular o en la PC escanea este QR para convertirte en un 𝗦𝘂𝗯-𝗕𝗼𝘁 Temporal._* 𓆪
-━━━━━━━━━━━━━━━━━
-
-\`1\` » 𝐻𝑎𝑔𝑎 𝑐𝑙𝑖𝑐 𝑒𝑛 𝑙𝑜𝑠 𝑡𝑟𝑒𝑠 𝑝𝑢𝑛𝑡𝑜𝑠 𝑒𝑛 𝑙𝑎 𝑒𝑠𝑞𝑢𝑖𝑛𝑎 𝑠𝑢𝑝𝑒𝑟𝑖𝑜𝑟 𝑑𝑒𝑟𝑒𝑐𝒉𝑎.
-\`2\` » 𝑇𝑜𝑞𝑢𝑒 𝑑𝑖𝑠𝑝𝑜𝑠𝑖𝑡𝑖𝑣𝑜𝑠 𝑣𝑖𝑛𝑐𝑢𝑙𝑎𝑑𝑜𝑠.
-\`3\` » 𝐸𝑠𝑐𝑎𝑛𝑒𝑒 𝑒𝑠𝑡𝑒 𝑐𝑜𝑑𝑖𝑔𝑜 𝑄𝑅 𝑝𝑎𝑟𝑎 𝑖𝑛𝑖𝑐𝑖𝑎𝑟 𝑠𝑒𝑠𝑖𝑜𝑛 𝑐𝑜𝑛 𝑒𝑙 𝑏𝑜𝑡.
-
-> ⚠︎ ¡𝐄𝐬𝐭𝐞 𝐜𝐨𝐝𝐢𝐠𝐨 𝐐𝐑 𝐞𝐱𝐩𝐢𝐫𝐚 𝐞𝐧 45 𝐬𝐞𝐠𝐮𝐧𝐝𝐨𝐬!`;
-let rtx2 = `╔═══════════════════════╗
-║ ౄ⃝֟፝🌴 𝒖𝒔𝒂 𝒆𝒔𝒕𝒆 𝒄𝒐𝒅𝒊𝒈𝒐 𝒑𝒂𝒓𝒂 
-║ 𝒄𝒐𝒏𝒗𝒆𝒓𝒕𝒊𝒓𝒕𝒆 𝒆𝒏 𝒔𝒖𝒃𝒃𝒐𝒕 𝒕𝒆𝒎𝒑𝒐𝒓𝒂𝒍. ⭐
-╠═══════════════════════╣
-║ ➊ 𝐻𝑎𝑔𝑎 𝑐𝑙𝑖𝑐𝑘 𝑒𝑛 𝑒𝑛 𝑙𝑜𝑠 𝑡𝑟𝑒𝑠 
-║ │ 𝑝𝑢𝑛𝑡𝑜𝑠 𝑒𝑛 𝑙𝑎 𝑒𝑠𝑞𝑢𝑖𝑛𝑎 𝑠𝑢𝑝𝑒𝑟𝑖𝑜𝑟
-║ │ 𝑑𝑒𝑟𝑒𝑐ℎ𝑎.
-╠═══════════════════════╣
-║ ➋ 𝑇𝑜𝑞𝑢𝑒 𝑑𝑖𝑠𝑝𝑜𝑠𝑖𝑡𝑖𝑣𝑜𝑠 𝑣𝑖𝑛𝑐𝑢𝑙𝑎𝑑𝑜𝑠.
-╠═══════════════════════╣
-║ ➌ 𝑆𝑒𝑙𝑒𝑐𝑐𝑖𝑜𝑛𝑒 𝑣𝑖𝑛𝑐𝑢𝑙𝑎𝑟 𝑐𝑜𝑛 𝑒𝑙
-║ │ 𝑛𝑢𝑚𝑒𝑟𝑜 𝑑𝑒 𝑡𝑒𝑙𝑒𝑓𝑜𝑛𝑜.
-╠═══════════════════════╣
-║ ➍ 𝐸𝑠𝑐𝑟𝑖𝑏𝑎 𝑒𝑙 𝑐𝑜𝑑𝑖𝑔𝑜 𝑝𝑎𝑟𝑎 𝑖𝑛𝑖𝑐𝑖𝑎𝑟
-║ │ 𝑠𝑒𝑠𝑠𝑖𝑜𝑛 𝑐𝑜𝑛 𝑒𝑙 𝑏𝑜𝑡.
-╠═══════════════════════╣
-║          *✇︎ 𝑵𝒐𝒕𝒂:* 
-║ 𝑬𝒔𝒕𝒆 𝑪𝒐𝒅𝒊𝒈𝒐 𝒔𝒐𝒍𝒐 𝒇𝒖𝒏𝒄𝒊𝒐𝒏𝒂 𝒆𝒏
-║ 𝒆𝒍 𝒏𝒖𝒎𝒆𝒓𝒐 𝒒𝒖𝒆 𝒍𝒐 𝒔𝒐𝒍𝒊𝒄𝒊𝒕𝒐.
-╚═══════════════════════╝`;
+let rtx = `╔══════════════════════════╗
+║ ✨💥  L U F F Y -  B O T  🛶✨ 
+╠══════════════════════════╣
+║ ⟿ 💛 Utilice otro celular para escanear 
+║    este codigo 'QR' o escanea el codigo
+║    mediante una PC para convertirte en
+║    en un Sub Bot 🎉
+╟──────────────────────────╢
+║                            
+║➥ \`1\` Haga click en los ⋮ puntos
+║        en la esquina superior
+║        derecha.
+║➥ \`2\` Toca dispositivos vinculados.
+║➥ \`3\` Escanee este codigo QR para
+║         iniciar session
+╟──────────────────────────╢
+║ ⚠  Este codigo QR Expira en
+║     45 segundos
+╚══════════════════════════╝`;
+let rtx2 = `╔══════════════════════════╗
+║ ✨💥  L U F F Y -  B O T  🛶✨ 
+╠══════════════════════════╣
+║ ⟿ 💛 Usa este codigo para convertirte
+║     en Sub-Bot ☄️
+╟──────────────────────────╢
+║                            
+║➥ \`1\` 🌐 Haga click en los ⋮ puntos
+║          en la esquina superior
+║          derecha.
+║➥ \`2\` 🌴 Toca dispositivos vinculados.
+║➥ \`3\` 🏷️ Selecciona vincular con el
+║         numero de teléfono
+║➥ \`4\` ⚽ Escriba el codigo.
+╟──────────────────────────╢
+║ ⚠  Este codigo solo funciona en el 
+║     Numero que lo solicito³.
+╚══════════════════════════╝`;
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -181,7 +189,6 @@ let txtCode = await conn.sendMessage(m.chat, {
     }
 }, { quoted: m });
 
-
 let codeBot = await conn.reply(m.chat, `${secret}`, fkontak, rcanal);
 
 //txtCode = await conn.sendMessage(m.chat, {text : rtx2}, { quoted: m })
@@ -228,7 +235,7 @@ console.error(chalk.bold.yellow(`Error 440 no se pudo enviar mensaje a: +${path.
 if (reason == 405 || reason == 401) {
 console.log(chalk.bold.magentaBright(`\n╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄ • • • ┄┄┄┄┄┄┄┄┄┄┄┄┄┄⟡\n┆ La sesión (+${path.basename(pathluffyJadiBot)}) fue cerrada. Credenciales no válidas o dispositivo desconectado manualmente.\n╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄ • • • ┄┄┄┄┄┄┄┄┄┄┄┄┄┄⟡`))
 try {
-if (options.fromCommand) m?.chat ? await conn.sendMessage(`${path.basename(pathluffyJadiBot)}@s.whatsapp.net`, {text : '*SESIÓN PENDIENTE*\n\n> *INTENTÉ NUEVAMENTE VOLVER A SER SUB-BOT*' }, { quoted: m || null }) : ""
+if (options.fromCommand) m?.chat ? await conn.sendMessage(`${path.basename(pathluffyJadiBot)}@s.whatsapp.net`, {text : '*SESIÓN PENDIENTE*\n\n> *INTENTÉ NUEVAMENTE VOLVER A SER SUB-BOT USA #CODE*' }, { quoted: m || null }) : ""
 } catch (error) {
 console.error(chalk.bold.yellow(`Error 405 no se pudo enviar mensaje a: +${path.basename(pathluffyJadiBot)}`))
 }

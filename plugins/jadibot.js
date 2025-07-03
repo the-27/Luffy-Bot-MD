@@ -8,9 +8,6 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
   const isCommand2 = /^(stop|pausarai|pausarbot)$/i.test(command);
   const isCommand3 = /^(bots|sockets|socket)$/i.test(command);
 
-  const emoji = '🗑️';
-  const emoji2 = '⚠️';
-  const emoji3 = '✅';
 
   async function reportError(e) {
     await m.reply(`${msm} Ocurrió un error.`);
@@ -29,24 +26,24 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
 
       if (!fs.existsSync(sessionPath)) {
         await _envio.sendMessage(m.chat, {
-          text: `${emoji} Usted no tiene una sesión, puede crear una usando:\n${usedPrefix + command}\n\nSi tiene una *(ID)* puede usar para saltarse el paso anterior usando:\n*${usedPrefix + command}* \`\`\`(ID)\`\`\``
+          text: `⚡ Usted no tiene una sesión, puede crear una usando:\n${usedPrefix + command}\n\nSi tiene una *(ID)* puede usar para saltarse el paso anterior usando:\n*${usedPrefix + command}* \`\`\`(ID)\`\`\``
         }, { quoted: m });
         return;
       }
 
       if (global.conn.user.jid !== _envio.user.jid) {
         await _envio.sendMessage(m.chat, {
-          text: `${emoji2} Use este comando al *Bot* principal.\n\n*https://api.whatsapp.com/send/?phone=${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}&type=phone_number&app_absent=0*`
+          text: `☄️ Use este comando al *Bot* principal.\n\n*https://api.whatsapp.com/send/?phone=${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}&type=phone_number&app_absent=0*`
         }, { quoted: m });
       } else {
         await _envio.sendMessage(m.chat, {
-          text: `${emoji} Tu sesión como *Sub-Bot* se ha eliminado`
+          text: `🗑️ Tu sesión como *Sub-Bot* se ha eliminado`
         }, { quoted: m });
 
         try {
           fs.rmdirSync(sessionPath, { recursive: true, force: true });
           await _envio.sendMessage(m.chat, {
-            text: `${emoji3} Ha cerrado sesión y borrado todo rastro.`
+            text: `👾 Ha cerrado sesión y borrado todo rastro.`
           }, { quoted: m });
         } catch (e) {
           reportError(e);
@@ -57,9 +54,9 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
 
     case isCommand2: {
       if (global.conn.user.jid == _envio.user.jid) {
-        await _envio.reply(m.chat, `${emoji} Si no es *Sub-Bot* comuníquese al número principal del *Bot* para ser *Sub-Bot*.`, m);
+        await _envio.reply(m.chat, `🦠 Si no es *Sub-Bot* comuníquese al número principal del *Bot* para ser *Sub-Bot*.`, m);
       } else {
-        await _envio.reply(m.chat, `${emoji} ${botname} desactivado.`, m);
+        await _envio.reply(m.chat, `💛 Luffy bot desactivado temporalmente.`, m);
         _envio.ws.close();
       }
       break;
@@ -87,7 +84,7 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
 
       const message = users.map((v, i) => `
 ╭───⬣⃛ BOT *#${i + 1}* 
-│ 💖 *usuario* : ${v.user?.name || '𝐒𝐔𝐁 𝐁𝐎𝐓 ☘︎'}
+│ 💖 *usuario* : ${v.user?.name || 'Sub Bot ☘︎'}
 │ 💫 *Enlace* : wa.me/${(v.user?.jid || '').replace(/[^0-9]/g, '')}
 │ 🍿 *online* : ${v.uptime ? convertirMsADiasHorasMinutosSegundos(Date.now() - v.uptime) : 'Desconocido'}
 ╰───────────────`).join('\n\n');
@@ -98,8 +95,9 @@ let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner
 
       const totalUsers = users.length;
 
-      const responseMessage = `⚽ 𓂃ʟᴜғғʏ 𝒋𝒂𝒅𝒊𝒃𝒐𝒕𝒔 𝒂𝒄𝒕𝒊𝒗𝒐𝒔𓂃🌹
-> *✦ sᥙᑲᑲ᥆𝗍s ᥲᥴ𝗍і᥎᥆s:* ${totalUsers || '0'}
+      const responseMessage = `*LUFFY - JADIBOT LIST*
+> *Total de Subs:* *\`${totalUsers || '0'}\`*
+
 
 ${replyMessage.trim()}`;
 
@@ -107,7 +105,7 @@ ${replyMessage.trim()}`;
         image: { url: 'https://files.catbox.moe/bzwvsg.jpg' },
         caption: responseMessage,
         mentions: _envio.parseMention(responseMessage)
-      }, { quoted: m });
+      }, { quoted: fkontak });
 
       break;
     }
