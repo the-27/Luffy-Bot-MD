@@ -1,36 +1,35 @@
 import fetch from 'node-fetch'
 
+const logo = `${global.logo}`;
+
 let handler = async (m, { conn, text }) => {
   try {
     if (!text) {
-      return conn.reply(m.chat, `🌷 Ejemplo de uso: inspect https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U`, m, rcanal);
+      return conn.reply(m.chat, `🌷 Ejemplo de uso: .inspect https://whatsapp.com/channel/0029VbAtbPA84OmJSLiHis2U`, m);
     }
 
     if (!text.includes('https://whatsapp.com/channel/')) {
-      return conn.reply(m.chat, `☄️ Ingresa un link válido.`, m, rcanal);
+      return conn.reply(m.chat, `☄️ Ingresa un link válido.`, m);
     }
 
     let i = await getInfo(conn, text);
     if (!i) throw new Error('No se obtuvo información del canal.');
 
-    await conn.relayMessage(m.chat, {
-      extendedTextMessage: {
-        text: i.inf,
-        contextInfo: {
-          mentionedJid: conn.parseMention(i.inf),
-          externalAdReply: {
-            title: 'Canal inspeccionado',
-            mediaType: 1,
-            previewType: 0,
-            renderLargerThumbnail: true,
-            thumbnail: await (await fetch(logo)).buffer(),
-            sourceUrl: `https://whatsapp.com/channel/${i.id}`
-          }
+    await conn.sendMessage(m.chat, {
+      text: i.inf,
+      contextInfo: {
+        externalAdReply: {
+          title: 'Canal inspeccionado',
+          body: '',
+          mediaType: 1,
+          previewType: 0,
+          renderLargerThumbnail: true,
+          thumbnail: await (await fetch(logo)).buffer(),
+          sourceUrl: `https://whatsapp.com/channel/${i.id}`
         }
       }
     }, { quoted: m });
 
-    await m.reply(i.id);
     await m.react("☑️");
 
   } catch (error) {
