@@ -1,17 +1,18 @@
 let handler = async (m, { conn, usedPrefix }) => {
   let img = `https://files.catbox.moe/3gxuzq.jpg`;
-  let txt = `╭ - - - - - - -✎ 🌹   ❜ ⊹
-*︵₊˚꒰Ꮺ мαиυαℓ ραяα є∂ιταя τυ ρєяƒιℓ*
-*꒰ ୨⚽୧─・┈・୨⚡୧・┈・─୨🥥୧ ꒱*
-₊˚୨🍧 *${usedPrefix}setbirth* ✦ є∂ιτα τυ ƒєϲнα ∂є ϲυмρℓєαñοѕ 🎂.
-₊˚୨💥 *${usedPrefix}delbirth* ✦ єℓιмιиα τυ ƒєϲнα ∂є ϲυмρℓєαñοѕ 🎂.
-₊˚୨⚔️ *${usedPrefix}setdesc* ♡ є∂ιτα ℓα ∂єѕϲяιρϲιóи ∂є τυ ρєяƒιℓ.
-₊˚୨🍁 *${usedPrefix}deldesc* ♡ єℓιмιиα ℓα ∂єѕϲяιρϲιóи ∂є τυ ρєяƒιℓ.
-₊˚୨🌲 *${usedPrefix}ѕ_setgenre* ✐ є∂ιτα τυ géиєяο єи τυ ρєяƒιℓ.
-₊˚୨🏜️ *${usedPrefix}delgenre* ✐ єℓιмιиα τυ géиєяο єи τυ ρєяƒιℓ.
-₊˚୨❄️ *${usedPrefix}marry* ᰔᩚ ϲáѕατє ϲοи υиα ρєяѕοиα.
-₊˚୨🦠 *${usedPrefix}divorse* ঔ ∂ινóяϲιατє ∂є υиα ρєяѕοиα.
-╰───────────────⋆`;
+  let txt = `╭───✦ 🌌 𝐏𝐑𝐎𝐅𝐈𝐋 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒
+│ 📓 Manual de edición de perfil
+│ 🧠 Define tu identidad. El resto es ruido.
+│
+│ 🎉 ${usedPrefix}setbirth ┊ Configura tu fecha de nacimiento.
+│ 🗑️ ${usedPrefix}delbirth ┊ Elimina tu fecha de nacimiento.
+│ 🖋️ ${usedPrefix}setdesc ┊ Edita la descripción de tu perfil.
+│ 🧻 ${usedPrefix}deldesc ┊ Borra tu descripción.
+│ 🪞 ${usedPrefix}setgenre ┊ Establece tu género.
+│ 🚫 ${usedPrefix}delgenre ┊ Elimina tu género del perfil.
+│ 💞 ${usedPrefix}marry ┊ Establece vínculo con otro usuario.
+│ 💔 ${usedPrefix}divorse ┊ Rompe el vínculo actual.
+╰─────────────────────⟢`;
 
   const buttons = [
     { 
@@ -44,7 +45,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   await conn.sendMessage(m.chat, {
     image: { url: img },
     caption: txt,
-    footer: "⭐ ʟᴜғғʏ ʙᴏᴛ ᴍᴅ ✨",
+    footer: "⭐ ʀɪɴ ɪᴛᴏsʜɪ ʙᴏᴛ ᴍᴅ ✨",
     buttons: buttons,
     viewOnce: true,
     contextInfo: { forwardingScore: 999, isForwarded: true, fkontak }

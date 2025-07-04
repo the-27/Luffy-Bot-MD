@@ -25,31 +25,35 @@ let handler = async (m, { conn, args }) => {
 
     let perfil = await conn.profilePictureUrl(userId, 'image').catch(_ => 'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg');
 
-    let profileText = `╭▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╮
-│   =͟͟͞͞ ✿  *ᴘᴇʀғɪʟ ᴅᴇʟ ᴜsᴜᴀʀɪᴏ  ←╮*
-│   ╰ ࣪ ˖ ∿ ◤
-│ 👤 𝙐𝙨𝙪𝙖𝙧𝙞𝙤: @${userId.split('@')[0]}
-│ 💠 𝙉𝙤𝙢𝙗𝙧𝙚: ${name}
-│ 📜 𝘿𝙚𝙨𝙘.: ${description}
-│
-│ 💥 𝙀𝙙𝙖𝙙: ${user.age || 'Desconocida'}
-│ 🎂 𝘾𝙪𝙢𝙥𝙡𝙚𝙖𝙣̃𝙤𝙨: ${cumpleanos}
-│ ☘️ 𝙂𝙚𝙣𝙚𝙧𝙤 ${genero}
-│ 👩‍❤️‍👩 𝘾𝙖𝙨𝙖𝙙@ 𝙘𝙤𝙣: ${pareja}
-╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
+    let profileText = `⠐⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒
+📁 𝗘𝗫𝗣𝗘𝗗𝗜𝗘𝗡𝗧𝗘 𝗔𝗡Á𝗟𝗜𝗧𝗜𝗖𝗢 - 𝗥𝗜𝗡 𝗜𝗧𝗢𝗦𝗛𝗜
+⠐⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒⠒
 
-╭─┉─ • 🧪 ʀᴇᴄᴜʀsᴏs ᴜsᴇʀ 🧪 •
-│✨ 𝙀𝙭𝙥: ${exp.toLocaleString()}
-│🔋 𝙉𝙞𝙫𝙚𝙡: ${nivel}
-│📈 𝙍𝙖𝙣𝙜𝙤: ${role}
-│
-│ 💱 𝘾𝙤𝙞𝙣𝙨 𝙘𝙖𝙧𝙩𝙚𝙧𝙖: ${coins.toLocaleString()} ${moneda}
-│ 💱 𝘾𝙤𝙞𝙣𝙨 𝙗𝙖𝙣𝙘𝙤: ${bankCoins.toLocaleString()} ${moneda}
-│ 🔮 𝙋𝙧𝙚𝙢𝙞𝙪𝙢: ${user.premium ? 'Modo Activado' : 'Modo Desactivado'}
-╰▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭╯
+🆔 Usuario: @${userId.split('@')[0]}
+🧠 Nombre clave: ${name}
+📓 Nota mental: ${description}
 
-   𓄲⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉⩉𓄴
-> *🌐 ᴘᴀʀᴀ ᴇᴅɪᴛᴀʀ ᴛᴜ ᴘᴇʀғɪʟ ᴜsᴀ #perfildates*
+╭━━〔 🧬 D𝗔𝗧𝗢𝗦 𝗕𝗔𝗦𝗘 〕━━⬣
+┃ 📌 Edad: ${user.age || 'Desconocida'}
+┃ 🎂 Cumpleaños: ${cumpleanos}
+┃ 🧬 Género: ${genero}
+┃ 💍 Vínculo activo: ${pareja}
+╰━━━━━━━━━━━━━━━━⬣
+
+╭━━〔 ⚙️ 𝗥𝗘𝗡𝗗𝗜𝗠𝗜𝗘𝗡𝗧𝗢 〕━━⬣
+┃ 📈 EXP acumulada: ${exp.toLocaleString()}
+┃ 🧪 Nivel actual: ${nivel}
+┃ 🏅 Rango estratégico: ${role}
+
+┃ 💰 Wallet: ${coins.toLocaleString()} ${moneda}
+┃ 🏛 Banco: ${bankCoins.toLocaleString()} ${moneda}
+┃ 🔒 Modo Premium: ${user.premium ? '✔ Activado' : '✖ Desactivado'}
+╰━━━━━━━━━━━━━━━━⬣
+
+🧠 Evaluación final:
+_"Los números no definen al estratega, pero el estratega los domina."_
+
+> 📎 Usa *#perfildates* para reconfigurar tus datos.
   `.trim();
 
     await conn.sendMessage(m.chat, { 

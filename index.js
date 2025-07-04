@@ -39,7 +39,7 @@ const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
 
 let { say } = cfonts
 
-console.log(chalk.bold.redBright(`\n⇏あ INICIANDO RIN ITOSHI BOT, ESPERE TANTITO....... ㊣\n`))
+console.log(chalk.bold.redBright(`\nあ 💻 INICIANDO SISTEMA, ESPERE TANTITO.......\n`))
 
 say('LUFFY BOT MD', {
 font: 'block',
@@ -47,7 +47,7 @@ align: 'center',
 colors: ['magentaBright']
 })
 
-say(`Developed By • BLACK`, {
+say(`Developed By • BLAC'K`, {
 font: 'console',
 align: 'center',
 colors: ['blueBright']

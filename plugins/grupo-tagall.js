@@ -11,7 +11,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
     throw false;
   }
 
-  const pesan = args.length ? args.join(' ') : '¡Sean bienvenidos, El que no habla es fan de los BTS!';
+  const pesan = args.length ? args.join(' ') : '¡Sean bienvenidos, 𝗗𝗘𝗦𝗣𝗜𝗘𝗥𝗧𝗘𝗡 𝗣𝗟𝗔𝗡𝗧𝗔𝗦 🌱!';
   const mj = `°◦⃝📑 *𝙼𝙴𝙽𝚂𝙰𝙹𝙴:*\n│ ${pesan}`;
   const groupName = await conn.getName(m.chat);
 
@@ -21,11 +21,12 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
     `│ 🥥 𝑀𝐸𝑁𝐶𝐼𝑂𝑁 𝐺𝐸𝑁𝐸𝑅𝐴𝐿 🥞`,
     `│ 🧃 *𝙼𝙸𝙴𝙼𝙱𝚁𝙾𝚂*: ${participants.length}`,
     `│ 🍁 *𝙶𝚁𝚄𝙿𝙾*: ${groupName}`,
-    `├─➤ ${mj}`
+    `├─➤ ${mj}`,
+    `❖––––––––––––––––––✦`
   ];
 
   for (const mem of participants) {
-    teks.push(`│ ${customEmoji} @${mem.id.split('@')[0]}`);
+    teks.push(`│ യ ׄ${customEmoji}˚ @${mem.id.split('@')[0]}`);
   }
 
   teks.push(`╰──────────────༓`);
@@ -37,7 +38,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
     contextInfo: {
       mentionedJid: participants.map(p => p.id),
       externalAdReply: {
-        title: '✧ 𝐈𝐍𝐕𝐎𝐂𝐀𝐍𝐃𝐎 𝐀 𝐓𝐎𝐃𝐎𝐒ꦿ✧',
+        title: '✧ 𝐈𝐍𝐕𝐎𝐂𝐀𝐍𝐃𝐎 𝐄𝐒𝐏𝐈𝐑𝐈𝐓𝐔𝐒ꦿ✧',
         body: '🌴 ʙᴏᴛ ᴅᴇ ᴛʜᴇ_ʙʟᴀᴄᴋ ⚡',
         thumbnailUrl: logo,
         mediaType: 1,

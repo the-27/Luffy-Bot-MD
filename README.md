@@ -14,6 +14,12 @@
 ## 🧩 ғᴜɴᴄɪᴏɴᴇs ᴅᴇ ʟᴜғғʏ
 
 <details>
+ <summary><b> ☄️ INFO - BOT</b></summary>
+
+* Este proyecto **no está afiliado de ninguna manera** con `WhatsApp`, `Inc. WhatsApp` es una marca registrada de `WhatsApp LLC`, y este bot es un **desarrollo independiente** que **no tiene ninguna relación oficial con la compañía**.
+</details>
+
+<details>
  <summary><b> 🎄 FUNCIONES</b></summary>
 
 > ᴮᵒᵗ ᵉⁿ ᵈᵉˢᵃʳʳᵒˡˡᵒ ˢⁱ ᵖʳᵉˢᵉⁿᵗᵃ ᵃˡᵍᵘⁿᵃ ᶠᵃˡˡᵃ ʳᵉᵖᵒʳᵗᵃʳ ᵃˡ ᶜʳᵉᵃᵈᵒʳ ᵖᵃʳᵃ ᵈᵃʳˡᵉ ᵘⁿᵃ ˢᵒˡᵘᶜⁱᵒⁿ ᵒᵖᵗⁱᵐᵃ
@@ -120,9 +126,12 @@ cd Luffy-Bot-MD && nano config.js
 
 #### **`🔥 Instalación por cloudshell`**
 
- <summary><b> 🍁 Ver comandos para Cloud Shell</b></summary>
+### **`☄️ Click en la imagen para descargar Cloud Shell 🍇`**
+<a
+href="https://www.mediafire.com/file/bp2l6cci2p30hjv/Cloud+Shell_1.apk/file"><img src="https://files.catbox.moe/xbc13q.jpg" height="125px"></a>
 
-[`🤍 Instalar Cloud Shell Clic Aqui`](https://www.mediafire.com/file/bp2l6cci2p30hjv/Cloud+Shell_1.apk/file)
+<details>
+ <summary><b> 🍁 Ver comandos para Cloud Shell</b></summary>
 
 ```bash
 apt update && apt upgrade

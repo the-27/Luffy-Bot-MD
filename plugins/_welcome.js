@@ -65,7 +65,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
 
 *${global.welcom1}*
 
-> ✐ \`\`\`Usa #𝗺𝗲𝗻𝘂 para ver los comandos disponibles.\`\`\``;
+> 🧠 \`\`\`Usa #𝗺𝗲𝗻𝘂 para descubrir comandos poderosos 🔥.\`\`\``;
 
     await conn.sendMini(m.chat, txt, dev, bienvenida, img, img, redes, fkontak);
   }

@@ -10,7 +10,7 @@ const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/b
 const defaultMenu = {
   before: `╭━━〔 *MENU ADMINIS* 〕━━⬣
 ┃ 🧪 HOLA "%name" AQUI ESTA EL
-┃ 🧹 MENU PARA ADMINS.
+┃ 🧹 MENU PARA GETIONAR GRUPOS..
 ╰━━━━━━━━━━━━━━━━⬣
 
 > ғᴜɴᴄɪᴏɴᴇs ᴘᴀʀᴀ ɢʀᴜᴘᴏs.
@@ -228,7 +228,7 @@ function clockStringP(ms) {
   return [ye, ' *Años 🗓️*\n',  mo, ' *Meses 🌙*\n', d, ' *Días ☀️*\n', h, ' *Horad 🕐*\n', m, ' *Minutos ⏰*\n', s, ' *Segundos ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
 }
 function ucapan() {
-  const time = moment.tz('America/Buenos_Aires').format('HH')
+  const time = moment.tz('America/Lima').format('HH')
   let res = "Despierto tan temprano? 🥱"
   if (time >= 4) {
     res = "Madrugada 🌄"

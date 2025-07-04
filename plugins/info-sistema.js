@@ -24,8 +24,8 @@ const getDiskSpace = () => {
 
 const handler = async (m, { conn }) => {
 
-    //const shadowbot = `⚙️ C A R G A N D O ⚙️\n🚀 *ᴇɴᴠɪᴀɴᴅᴏ ʟᴀ ɪɴғᴏʀᴍᴀᴄɪᴏɴ ᴅᴇʟ sɪsᴛᴇᴍᴀ ᴅᴇʟ ʙᴏᴛ....*`
-    // await conn.reply(m.chat, shadowbot.trim(), m)
+    //const rin = `⚙️ C A R G A N D O ⚙️\n🚀 *ᴇɴᴠɪᴀɴᴅᴏ ʟᴀ ɪɴғᴏʀᴍᴀᴄɪᴏɴ ᴅᴇʟ sɪsᴛᴇᴍᴀ....*`
+    // await conn.reply(m.chat, rin.trim(), m)
     
     const totalMem = os.totalmem();
     const freeMem = os.freemem();
