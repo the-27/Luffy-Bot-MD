@@ -126,8 +126,6 @@ cd Luffy-Bot-MD && nano config.js
 
 #### **`🔥 Instalación por cloudshell`**
 
-### **`☄️ Click en la imagen para descargar Cloud Shell 🍇`**
-
 <details>
  <summary><b> 🍁 Ver comandos para Cloud Shell</b></summary>
 
